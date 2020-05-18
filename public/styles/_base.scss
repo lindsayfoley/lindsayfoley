@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Anaheim');
+
+$primary-colour:#54c0b4;
+$light-color:#ffffff;
+$accent-color:#feac4c; //orange
+$pale-accent-color:#fabb77; //gold
+$dark-color:#338078; //footer
+$uppercase-font:'Karla', sans-serif;
+$primary-font:'Anaheim', sans-serif;
+$italic-font:'Droid Serif', serif;
+$default-font-size:18px;
+$small-font-size:13px;
+$medium-font-size:22px;
+$large-font-size:35px;
+$stand-out:uppercase;
+$default-border:1px solid white;
+$largeDevices:813px; 
+$mediumDevices:812px; //iPhone X landscape
+$smallDevices:550px; //iPhone X landscape
+
+@mixin largeScreen() {
+	@media (min-width:#{$largeDevices}) {
+		@content;
+	}
+}
+
+@mixin mediumScreen() {
+	@media (max-width:#{$mediumDevices}) {
+		@content;
+	}
+}
+
+@mixin smallScreen() {
+	@media (max-width:#{$smallDevices}) {
+		@content;
+	}
+}
+
+@mixin end-of-content() {
+	border-bottom:2px solid $light-color; 
+	padding-bottom:30px; 
+	margin-bottom:30px;
+}
+
+@mixin ui-card($width, $height) {
+	width:$width;
+	height:$height;
+}
+
+@mixin row-of-elements() {
+	display:flex;
+	
+	@include largeScreen {
+		flex-direction:row;
+	}
+	
+	@include smallScreen {
+		flex-direction:column;
+	}	
+}
+
+@mixin info-rollover-tiles {
+	position:relative;	
+	overflow:hidden;
+	
+	&:hover img {
+		opacity:0.8;
+		transition:opacity .35s ease 0s,transform .35s ease 0s;
+		-webkit-transition:opacity .35s ease 0s,transform .35s ease 0s;
+		transform:scale(1.15);
+	}
+	
+	&:hover figcaption {
+		display:block;
+	    background-color:hsla(0,0%,100%,0.7);
+	    position:absolute;
+	    top:0;
+	    left:0;
+    }
+    
+    	&:hover p {
+		font-size:$default-font-size; 
+		color:darken($dark-color, 50%); 
+		font-weight:bold; 
+		padding:32% 10px; 		
+	}	
+}
+
+body { 
+	background-color:$primary-colour; 
+	font-family:$primary-font; 
+	margin:0; 
+	text-align:center; 
+}
+
+p, p a, ul li, dt, dl, i {
+	font-size:$default-font-size; 
+}
+
+p, a, ul li, dt, dl, i {
+	color:$light-color;	
+	margin-top:0;
+}
+
+h1, h2, h3 { 
+	margin:0 auto; 
+	color:$light-color;
+	text-transform:$stand-out; 
+}
+
+h1 { 
+	width:240px;
+	font-family:$uppercase-font;
+	font-size:$large-font-size;
+	font-weight: 500;
+	border-bottom:4px double $light-color; 
+}
+
+h2 {
+	font-family:$italic-font; 
+	font-size:$medium-font-size; 
+	font-style:italic; 
+	font-weight:normal; 
+	padding-top:10px; 
+	text-transform:none;
+}
+
+h3 {
+	padding-top:10px;	
+}
+
+a { 
+	text-decoration:none; 
+	
+	img {
+		border:0;
+	}
+}
+
+ul, dl {
+	list-style-position:inside;	
+}
+
+ul { 
+	padding-left:0; 
+}
+
+dl {
+	padding:20px;
+	margin:0;
+}
+
+dt {
+	text-decoration:underline;
+	text-align:center;
+	margin-bottom: 5px;
+}
+
+dd { 
+	display:list-item; 
+	list-style-type:disc; 
+	text-align:left;
+	margin:0 10px; 
+}
+
+figure { 
+	margin:0; 
+}
+
+button {
+	font-family:$uppercase-font;
+	outline:0;
+}
+
+footer a {
+	color:$pale-accent-color;
+}
+
+small { 
+	padding:15px 0; 
+	display:block;
+}
+
+i { 
+	vertical-align:middle; 
+} 
+
+hr {
+	color:lighten(#9B9895, 20%);
+}
+
+#social-icons a i { 
+	color:$pale-accent-color;
+	font-size:$medium-font-size; 
+}
+
+#social-icons a:not(:first-of-type) { 
+	margin-left:10px; 
+}

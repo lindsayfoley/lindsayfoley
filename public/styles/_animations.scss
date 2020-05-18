@@ -1,0 +1,280 @@
+@import "_base.scss";
+
+/* Animating screen */
+@include largeScreen {
+  #animated-screen {
+    position: relative;
+  }
+
+  #top_row,
+  #hero_row,
+  #last_row_first_square {
+    animation: screenContentsSlideIn 1.5s forwards;
+    -moz-animation: screenContentsSlideIn 1.5s forwards;
+    -webkit-animation: screenContentsSlideIn 1.5s forwards;
+    animation-delay: 1.25s;
+    -moz-animation-delay: 1.25s;
+    -webkit-animation-delay: 1.25s;
+  }
+
+  #top_row,
+  #hero_row,
+  #last_row_first_square,
+  #last_row_second_square,
+  #last_row_top_rectangle,
+  #last_row_middle_rectangle,
+  #last_row_bottom_rectangle {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #top_row {
+    width: 145px;
+    height: 16px;
+    background-color: #97ddeb;
+    top: 14px;
+    left: 125px;
+  }
+
+  #hero_row {
+    width: 145px;
+    height: 34px;
+    background-color: #f96f74;
+    top: 33px;
+    left: 125px;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+  }
+
+  #last_row_first_square,
+  #last_row_second_square {
+    width: 26px;
+    height: 20px;
+    background-color: #fcdc7b;
+    top: 70px;
+    animation-delay: 1.75s;
+    -moz-animation-delay: 1.75s;
+    -webkit-animation-delay: 1.75s;
+  }
+
+  #last_row_first_square {
+    left: 125px;
+  }
+
+  #last_row_second_square {
+    left: 153px;
+    animation: secondSquareSlideIn 1.25s forwards;
+    -moz-animation: secondSquareSlideIn 1.25s forwards;
+    -webkit-animation: secondSquareSlideIn 1.25s forwards;
+    animation-delay: 1.75s;
+    -moz-animation-delay: 1.75s;
+    -webkit-animation-delay: 1.75s;
+  }
+
+  #last_row_top_rectangle,
+  #last_row_middle_rectangle,
+  #last_row_bottom_rectangle {
+    width: 88px;
+    height: 5px;
+    background-color: #f8ae85;
+    animation: rectangleSlideIn 1.5s forwards;
+    -moz-animation: rectangleSlideIn 1.5s forwards;
+    -webkit-animation: rectangleSlideIn 1.5s forwards;
+    left: 182px;
+    animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+  }
+
+  #last_row_top_rectangle {
+    top: 71px;
+  }
+
+  #last_row_middle_rectangle {
+    top: 78px;
+  }
+
+  #last_row_bottom_rectangle {
+    top: 85px;
+  }
+
+  /* Top_row animation */
+  @-moz-keyframes screenContentsSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 170px;
+    }
+    50% {
+      left: 110px;
+    }
+    100% {
+      left: 125px;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes screenContentsSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 170px;
+    }
+    50% {
+      left: 110px;
+    }
+    100% {
+      left: 125px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes screenContentsSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 170px;
+    }
+    50% {
+      left: 110px;
+    }
+    100% {
+      left: 125px;
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes secondSquareSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 190px;
+    }
+    50% {
+      left: 140px;
+    }
+    100% {
+      left: 153px;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes secondSquareSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 190px;
+    }
+    50% {
+      left: 140px;
+    }
+    100% {
+      left: 153px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes secondSquareSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 190px;
+    }
+    50% {
+      left: 140px;
+    }
+    100% {
+      left: 153px;
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes rectangleSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 220px;
+    }
+    50% {
+      left: 170px;
+    }
+    100% {
+      left: 182px;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes rectangleSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 220px;
+    }
+    50% {
+      left: 170px;
+    }
+    100% {
+      left: 182px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes rectangleSlideIn {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 220px;
+    }
+    50% {
+      left: 170px;
+    }
+    100% {
+      left: 182px;
+      opacity: 1;
+    }
+  }
+}
+
+//Portfolio
+.flip-card.show-details > div {
+  -moz-animation: details-bg-change 1.5s forwards;
+  -webkit-animation: details-bg-change 1.5s forwards;
+  animation: details-bg-change 1.5s forwards;
+}
+
+@-moz-keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 0.95);
+  }
+}
+
+@-webkit-keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 0.95);
+  }
+}
+
+@keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 0.95);
+  }
+}

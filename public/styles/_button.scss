@@ -1,0 +1,18 @@
+@import "_base.scss";
+
+button {
+  background: inherit;
+  color: $light-color;
+  width: 250px;
+  font-size: $small-font-size;
+  line-height: 35px;
+  border: $default-border;
+  font-weight: bold;
+  text-transform: $stand-out;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background: $light-color;
+    color: $primary-colour;
+  }
+}

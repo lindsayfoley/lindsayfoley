@@ -1,0 +1,49 @@
+@import "_base.scss";
+
+#skills-section {
+  display: none;
+
+  .wrapper {
+    @include row-of-elements;
+  }
+
+  .wrapper > section {
+    width: 100%;
+    padding-top: 30px;
+    background-color: darken($primary-colour, 10%);
+  }
+
+  .wrapper > section:first-of-type {
+    border-right: 10px solid $primary-colour;
+  }
+
+  img {
+    width: 160px;
+  }
+}
+
+#professional-tiles {
+  @include end-of-content;
+  @include row-of-elements;
+  padding-top: 30px;
+
+  @include mediumScreen {
+    display: none;
+  }
+}
+
+#professional + nav {
+  @include mediumScreen {
+    margin-top: 20px;
+  }
+}
+
+figcaption {
+  display: none;
+}
+
+figure {
+  height: 235px;
+  overflow: hidden;
+  @include info-rollover-tiles;
+}
