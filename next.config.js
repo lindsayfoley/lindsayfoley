@@ -1,5 +1,6 @@
-// next.config.js
-const withSass = require("@zeit/next-sass");
-module.exports = withSass({
-  cssModules: true
-});
+const withStyles = require('@webdeb/next-styles');
+
+module.exports = withStyles({
+  sass: true, 
+  modules: true
+})

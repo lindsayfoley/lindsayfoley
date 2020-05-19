@@ -1,9 +1,9 @@
 import React from "react";
 
-function Header() {
+const Header: React.FunctionComponent = () => {
   return (
     <header>
-      <h1 itemprop="name">
+      <h1 itemProp="name">
         <a href="/">Lindsay Foley</a>
       </h1>
     </header>

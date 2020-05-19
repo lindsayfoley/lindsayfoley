@@ -1,14 +1,13 @@
 import React from "react";
 
-function Intro() {
+const Intro: React.FunctionComponent = () => {
   return (
-    <main id="homepage">
-      <h2 itemprop="description">
-        <span itemprop="jobTitle">Web Developer</span> based in{" "}
-        <span itemprop="workLocation">London</span>
+    <main>
+      <h2 itemProp="description">
+        <span itemProp="jobTitle">Web Developer</span> based in <span itemProp="workLocation">London</span>
       </h2>
       <img
-        src="app/images/hp_hero.png"
+        src="/images/hp_hero.png"
         alt="A neat and tidy desk housing all the essentials including a cat mug full of english breakfast tea, biscuits and an iMac"
       />
     </main>

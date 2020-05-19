@@ -1,27 +1,28 @@
 import React from "react";
-import ExternalLink from "./ExternalLink";
+import AnchorExternal from "./AnchorExternal";
+import "../public/styles/_footer.scss";
 
-function Footer() {
+const Footer: React.FunctionComponent = () => {
   return (
     <footer>
       <div id="social-icons">
-        <ExternalLink
+        <AnchorExternal
           link="mailto:me@lindsayfoley.co.uk"
           icon="fa fa-paper-plane"
         />
-        <ExternalLink
+        <AnchorExternal
           link="http://uk.linkedin.com/pub/lindsay-foley/34/935/9a1"
           icon="fab fa-linkedin-in"
         />
-        <ExternalLink
+        <AnchorExternal
           link="https://github.com/lindsayfoley"
           icon="fab fa-github-alt"
         />
-        <ExternalLink
+        <AnchorExternal
           link="http://instagram.com/comeflywithlindsay"
           icon="fab fa-instagram"
         />
-        <ExternalLink link="http://comeflywithlindsay.com" icon="fas fa-rss" />
+        <AnchorExternal link="http://comeflywithlindsay.com" icon="fas fa-rss" />
       </div>
       <small>
         <strong>&#169; LINDSAY FOLEY</strong>

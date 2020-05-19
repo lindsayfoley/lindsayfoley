@@ -169,33 +169,11 @@ figure {
 	margin:0; 
 }
 
-button {
-	font-family:$uppercase-font;
-	outline:0;
-}
-
-footer a {
-	color:$pale-accent-color;
-}
-
 small { 
 	padding:15px 0; 
 	display:block;
 }
 
-i { 
-	vertical-align:middle; 
-} 
-
 hr {
 	color:lighten(#9B9895, 20%);
-}
-
-#social-icons a i { 
-	color:$pale-accent-color;
-	font-size:$medium-font-size; 
-}
-
-#social-icons a:not(:first-of-type) { 
-	margin-left:10px; 
 }
