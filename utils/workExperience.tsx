@@ -61,7 +61,6 @@ const workExperience: ICompanyDetails[] = [
     cta: "View past work ›",
     link: "https://web.archive.org/web/20150707135538/http://www.selfridges.com/content/article/paddington",
   },
-
   {
     id: "hopelands",
     companyName: "Hopelands Cattery",

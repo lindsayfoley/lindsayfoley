@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import Layout from "../components/Layout";
 import Head from "next/head";
-import workExperience from "../components/workExperience";
+import workExperience from "../utils/workExperience";
 import JobDetailsCard from "../components/JobDetailsCard";
-import AnchorButton from "../components/AnchorButton";
+import Nav from "../components/Nav";
 import "../public/styles/_portfolio.scss";
 
 interface IPortfolioState {
   cardsWithJobDetailsVisible: string[];
 }
 
-class Portfolio extends React.Component<IPortfolioState> {
+class Portfolio extends React.PureComponent<IPortfolioState> {
 
   state: IPortfolioState = {
     cardsWithJobDetailsVisible: [],
@@ -36,18 +36,11 @@ class Portfolio extends React.Component<IPortfolioState> {
       <Layout>
         <Head>
           <title>View My Web Development Portfolio and Past Projects</title>
-          <meta
-            name="keywords"
-            content="freelancer, freelance, web, developer, development, London, XHTML, HTML, HTML 5, CSS, jQuery, JavaScript, web design, web development, web site development, web site design, web design development, interactive, london web design, london ecommerce, london e-commerce, london web development, uk, web site, web sites, Lindsay Foley"
-          />
-          <meta
-            name="description"
-            content="Lindsay Foley is a web developer in London, have a look at some completed projects here."
-          />
+          <meta name="description" content="Lindsay Foley is a web developer in London, have a look at some completed projects here." />
         </Head>
         <main>
-          <section id="wrapper" className="companies">
-            {workExperience.map((job) => (
+          <section className="companies">
+            {workExperience.map(job => (
               <JobDetailsCard
                 key={job.id}
                 company={job}
@@ -56,10 +49,10 @@ class Portfolio extends React.Component<IPortfolioState> {
               />
             ))}
           </section>
-          <nav>
-            <AnchorButton link="about" cta="about me" />
-            <AnchorButton link="/" cta="back to home" />
-          </nav>
+          <Nav buttons={[
+            { link: "about", cta: "about me" },
+            { link: "/", cta: "back to home" }
+          ]} />
         </main>
       </Layout>
     );

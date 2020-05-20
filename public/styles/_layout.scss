@@ -5,8 +5,8 @@ body {
 }
 
 main {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 30px auto 0 auto;
 
   @include mediumScreen {
     padding: 0 10px;
@@ -15,10 +15,6 @@ main {
 
 header {
   margin-top: 40px;
-}
-
-section {
-  margin-top: 30px;
 }
 
 nav {

@@ -4,7 +4,7 @@
   position: relative;
   cursor: pointer;
   margin: 5px auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .flip-card > div {
@@ -13,4 +13,37 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   transition: height 1.5s ease 0s;
+}
+
+.flip-card.show-details > div {
+  -moz-animation: details-bg-change 1.5s forwards;
+  -webkit-animation: details-bg-change 1.5s forwards;
+  animation: details-bg-change 1.5s forwards;
+}
+
+@-moz-keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 0.95);
+  }
+}
+
+@-webkit-keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 0.95);
+  }
+}
+
+@keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 0.95);
+  }
 }
