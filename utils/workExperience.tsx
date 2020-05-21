@@ -3,7 +3,7 @@ import React from "react";
 export interface ICompanyDetails {
   id: string;
   companyName: string;
-  description: any;
+  description: JSX.Element;
   cta?: string;
   link: string;
 }

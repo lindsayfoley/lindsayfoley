@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import "../public/styles/_layout.scss";
 
 interface ILayoutProps {
-  children: any;
+  children: JSX.Element | JSX.Element[];
 }
 
 const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
