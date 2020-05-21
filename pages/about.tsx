@@ -14,9 +14,9 @@ const About: React.FunctionComponent = () => {
       </Head>
       <main>
         <p>I’ve been busy working on my little corner of the internet for quite a while so thanks for stopping by!</p>
-        <p>If you've been here before, the site it may look unchanged but I do update it every so often
+        <p>If you've been here before the site it may look unchanged but I do update it every so often
         utilising new skills that I learn - currently it's a React app written in Typescript,
-        on the Next.js framework using SASS.</p>
+        on the Next.js framework, styled using SASS.</p>
         <p>I have 9 years of experience working in an Ecommerce environment and have been developing professionally for 8 years now. 
           In that time, I've worked for notable companies such as Oliver Bonas,
           Anya Hindmarch, Selfridges and Disney.

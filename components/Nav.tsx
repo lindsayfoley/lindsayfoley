@@ -8,7 +8,7 @@ interface INavProps {
 
 const Nav: React.FunctionComponent<INavProps> = ({ buttons }) =>
   <nav>
-    {buttons.map(button => <AnchorButton {...button} />)}
+    {buttons.map((button, index) => <AnchorButton {...button} key={index} />)}
   </nav>;
 
 export default Nav;

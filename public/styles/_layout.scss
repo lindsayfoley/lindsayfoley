@@ -2,42 +2,42 @@
 
 body {
   min-width: 320px;
-}
 
-main {
-  max-width: 900px;
-  margin: 30px auto 0 auto;
+  main {
+    max-width: 950px;
+    margin: 30px auto 0 auto;
 
-  @include mediumScreen {
-    padding: 0 10px;
-  }
-}
-
-header {
-  margin-top: 40px;
-}
-
-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @include smallScreen {
-    flex-direction: column;
-  }
-
-  a:first-of-type {
-    @include smallScreen {
-      margin-bottom: 20px;
+    @include mediumScreen {
+      padding: 0 10px;
     }
   }
-}
 
-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  background-color: $dark-color;
-  color: $pale-accent-color;
+  header {
+    margin-top: 40px;
+  }
+
+  nav {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include smallScreen {
+      flex-direction: column;
+    }
+
+    a:first-of-type {
+      @include smallScreen {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: $dark-color;
+    color: $pale-accent-color;
+  }
 }

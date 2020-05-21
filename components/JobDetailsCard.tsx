@@ -1,41 +1,57 @@
 import React from "react";
 import AnchorExternal from "./AnchorExternal";
-import { ICompanyDetails } from "./workExperience";
+import { ICompanyDetails } from "../utils/workExperience";
 import "../public/styles/_flip-card.scss";
 
 interface IJobDetailsCardProps {
   company: ICompanyDetails;
   className: string;
   handleClick: (id: string) => void;
+  summaryIsVisible: boolean;
 }
 
-const JobDetailsCard: React.FunctionComponent<IJobDetailsCardProps> = ({ company, className, handleClick }) => {
+const JobDetailsCard: React.FunctionComponent<IJobDetailsCardProps> = ({ 
+  company, className, handleClick, summaryIsVisible 
+}) => {
+
   const defaultClassName = 'flip-card';
   const classNames = className !== "" && (`${className} ${defaultClassName}`);
+
+  const handleOnKeyDown = (event) => {
+    if (event.key === " " || event.key === "Enter" || event.key === "Spacebar") {
+      handleClick(company.id);
+    }
+  }
 
   return (
     <article
       id={company.id}
       className={classNames || defaultClassName}
       onClick={() => handleClick(company.id)}
+      onKeyDown={handleOnKeyDown}
+      aria-controls={company.id}
+      role="button" 
+      tabIndex={0}
+      aria-pressed={summaryIsVisible}
     >
-      <img
-        src={"/images/" + company.id + "-tile.png"}
-        alt={company.companyName + " website"}
-      />
-      <div itemScope itemType="http://schema.org/CreativeWork">
+      <div className="wrapper" itemScope itemType="http://schema.org/CreativeWork">
         <div className="heading">
           <h3 itemProp="name">{company.companyName}</h3>
           <span>Details &rsaquo;</span>
         </div>
-        <div className="description" itemProp="description">
+        <div 
+          className="description" 
+          itemProp="description" 
+          aria-hidden={!summaryIsVisible}
+          aria-labelledby={company.id}
+        >
           {company.description}
           <hr />
           {company.cta ? (
             <AnchorExternal link={company.link} cta={company.cta} />
-          ) : (
-            <AnchorExternal link={company.link} cta="Visit Site &rsaquo;" />
-          )}
+            ) : (
+              <AnchorExternal link={company.link} cta="Visit Site &rsaquo;" />
+              )}
         </div>
       </div>
     </article>

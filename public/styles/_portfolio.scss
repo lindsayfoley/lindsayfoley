@@ -1,15 +1,9 @@
 @import "_base.scss";
 
-article {
-  margin-top: 0;
-}
-
 .companies {
   @include end-of-content;
   @include row-of-elements;
   flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
 
   @include smallScreen {
     flex-wrap: nowrap;
@@ -17,69 +11,88 @@ article {
 
   .flip-card {
     @include ui-card(290px, auto);
-  }
-
-  ul {
-    list-style-type: none;
-  }
-}
-
-.flip-card {
-  img {
-    width: 290px;
     height: 260px;
-    display: block;
+    margin: 10px;
+    background-size: contain;
     border-radius: 5px;
-  }
+    overflow-y: hidden;
 
-  > div {
-    width: 100%;
-    height: 74px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: $accent-color;
-  }
+    .wrapper {
+      width: 100%;
+      height: 74px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: $accent-color;
 
-  .heading {
-    font-family: $uppercase-font;
+      .heading {
+        font-family: $uppercase-font;
 
-    span {
-      display: block;
-      padding: 10px 0;
-    }
-  }
+        span {
+          display: block;
+          padding: 10px 0;
+        }
+      }
 
-  .description {
-    display: none;
-
-    ul {
-      margin: 0;
+      .description {
+        display: none;
+      }
     }
 
-    a {
-      display: block;
-      margin-top: 5px;
+    &.show-details {
+      .wrapper {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 100%;
+      }
+
+      .heading span {
+        display: none;
+      }
+
+      .description {
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+      }
     }
   }
 }
 
-.flip-card.show-details {
-  > div {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 100%;
-  }
+#travel-blog {
+  background-image: url("/images/travel-blog-tile.png");
+}
 
-  .heading span {
-    display: none;
-  }
+#disney {
+  background-image: url("/images/disney-tile.png");
+}
 
-  .description {
-    display: block;
-    padding: 10px;
-  }
+#jia {
+  background-image: url("/images/jia-tile.png");
+}
+
+#perfume {
+  background-image: url("/images/perfume-tile.png");
+}
+
+#dashwood {
+  background-image: url("/images/dashwood-tile.png");
+}
+
+#selfridges {
+  background-image: url("/images/selfridges-tile.png");
+}
+
+#hopelands {
+  background-image: url("/images/hopelands-tile.png");
+}
+
+#whitestuff {
+  background-image: url("/images/whitestuff-tile.png");
+}
+
+#ppp {
+  background-image: url("/images/ppp-tile.png");
 }

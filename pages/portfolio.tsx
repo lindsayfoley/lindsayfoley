@@ -31,6 +31,8 @@ class Portfolio extends React.PureComponent<IPortfolioState> {
     }
   };
 
+  hasVisibleJobSummary = (id: string) => this.state.cardsWithJobDetailsVisible.includes(id);
+
   render() {
     return (
       <Layout>
@@ -45,7 +47,8 @@ class Portfolio extends React.PureComponent<IPortfolioState> {
                 key={job.id}
                 company={job}
                 handleClick={this.handleClick}
-                className={this.state.cardsWithJobDetailsVisible.includes(job.id) ? 'show-details' : ''}
+                className={this.hasVisibleJobSummary(job.id) ? 'show-details' : ''}
+                summaryIsVisible={this.hasVisibleJobSummary(job.id)}
               />
             ))}
           </section>
