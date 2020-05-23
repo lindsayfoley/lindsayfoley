@@ -1,179 +1,189 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
-@import url('https://fonts.googleapis.com/css?family=Anaheim');
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
 
-$primary-colour:#54c0b4;
-$light-color:#ffffff;
-$accent-color:#f5ac5e;
-$pale-accent-color:#fabb77;
-$dark-color:#338078;
-$uppercase-font:'Karla', sans-serif;
-$primary-font:'Anaheim', sans-serif;
-$italic-font:'Droid Serif', serif;
-$default-font-size:18px;
-$small-font-size:13px;
-$medium-font-size:22px;
-$large-font-size:35px;
-$stand-out:uppercase;
-$default-border:1px solid white;
-$largeDevices:813px; 
-$mediumDevices:812px; //iPhone X landscape
-$smallDevices:550px; //iPhone X landscape
+$primary-colour: #54c0b4;
+$light-color: #ffffff;
+$accent-color: #f5ac5e;
+$pale-accent-color: #fabb77;
+$dark-color: #338078;
+$italic-font: "Droid Serif", serif;
+$default-font-size: 18px;
+$small-font-size: 13px;
+$medium-font-size: 22px;
+$large-font-size: 50px;
+$default-border: 1px solid white;
+$largeDevices: 813px;
+$mediumDevices: 812px; //iPhone X landscape
+$smallDevices: 550px; //iPhone X landscape
+
+@mixin primary-font {
+  font-family: "orator-std", monospace;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-weight: 400;
+  text-align: center;
+}
 
 @mixin largeScreen() {
-	@media (min-width:#{$largeDevices}) {
-		@content;
-	}
+  @media (min-width:#{$largeDevices}) {
+    @content;
+  }
 }
 
 @mixin mediumScreen() {
-	@media (max-width:#{$mediumDevices}) {
-		@content;
-	}
+  @media (max-width:#{$mediumDevices}) {
+    @content;
+  }
 }
 
 @mixin smallScreen() {
-	@media (max-width:#{$smallDevices}) {
-		@content;
-	}
+  @media (max-width:#{$smallDevices}) {
+    @content;
+  }
 }
 
 @mixin end-of-content() {
-	border-bottom:2px solid $light-color; 
-	padding-bottom:30px; 
-	margin-bottom:30px;
+  border-bottom: 2px solid $light-color;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @mixin ui-card($width, $height) {
-	width:$width;
-	height:$height;
+  width: $width;
+  height: $height;
 }
 
 @mixin row-of-elements() {
-	display:flex;
-	
-	@include largeScreen {
-		flex-direction:row;
-	}
-	
-	@include smallScreen {
-		flex-direction:column;
-	}	
+  display: flex;
+
+  @include largeScreen {
+    flex-direction: row;
+  }
+
+  @include smallScreen {
+    flex-direction: column;
+  }
 }
 
 @mixin info-rollover-tiles {
-	position:relative;	
-	overflow:hidden;
-	
-	&:hover img {
-		opacity:0.8;
-		transition:opacity .35s ease 0s,transform .35s ease 0s;
-		-webkit-transition:opacity .35s ease 0s,transform .35s ease 0s;
-		transform:scale(1.15);
-	}
-	
-	&:hover figcaption {
-		display:block;
-	    background-color:hsla(0,0%,100%,0.7);
-	    position:absolute;
-	    top:0;
-	    left:0;
-    }
-    
-    	&:hover p {
-		font-size:$default-font-size; 
-		color:darken($dark-color, 50%); 
-		font-weight:bold; 
-		padding:32% 10px; 		
-	}	
+  position: relative;
+  overflow: hidden;
+
+  &:hover img {
+    opacity: 0.8;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    -webkit-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    transform: scale(1.15);
+  }
+
+  &:hover figcaption {
+    display: block;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover p {
+    font-size: $default-font-size;
+    color: darken($dark-color, 50%);
+    font-weight: bold;
+    padding: 32% 10px;
+  }
 }
 
-body { 
-	background-color:$primary-colour; 
-	font-family:$primary-font; 
-	margin:0; 
-	text-align:center; 
+body {
+  @include primary-font;
+  background-color: $primary-colour;
+  margin: 0;
 }
 
-p, p a, ul li, dt, dl, i {
-	font-size:$default-font-size; 
+p,
+p a,
+ul li,
+dt,
+dl,
+i {
+  font-size: $default-font-size;
 }
 
-p, a, ul li, dt, dl, i {
-	color:$light-color;	
-	margin-top:0;
+p,
+a,
+ul li,
+dt,
+dl,
+i {
+  color: $light-color;
+  margin-top: 0;
 }
 
-h1, h2, h3 { 
-	margin:0 auto; 
-	color:$light-color;
-	text-transform:$stand-out; 
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+  color: $light-color;
 }
 
-h1 { 
-	width:240px;
-	font-family:$uppercase-font;
-	font-size:$large-font-size;
-	font-weight: 500;
-	border-bottom:4px double $light-color; 
+h1 {
+  @include primary-font;
+  width: 300px;
+  letter-spacing: -7px;
+  font-size: $large-font-size;
+  border-bottom: 4px double $light-color;
 }
 
 h2 {
-	font-family:$italic-font; 
-	font-size:$medium-font-size; 
-	font-style:italic; 
-	font-weight:normal; 
-	padding-top:10px; 
-	text-transform:none;
+  font-family: $italic-font;
+  font-size: $medium-font-size;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 10px;
+  text-transform: none;
 }
 
-h3 {
-	padding-top:10px;	
+a {
+  text-decoration: none;
+
+  img {
+    border: 0;
+  }
 }
 
-a { 
-	text-decoration:none; 
-	
-	img {
-		border:0;
-	}
+ul,
+dl {
+  list-style-position: inside;
 }
 
-ul, dl {
-	list-style-position:inside;	
-}
-
-ul { 
-	padding-left:0; 
+ul {
+  padding-left: 0;
 }
 
 dl {
-	padding:20px;
-	margin:0;
+  padding: 20px;
+  margin: 0;
 }
 
 dt {
-	text-decoration:underline;
-	text-align:center;
-	margin-bottom: 5px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
-dd { 
-	display:list-item; 
-	list-style-type:disc; 
-	text-align:left;
-	margin:0 10px; 
+dd {
+  display: list-item;
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 10px;
 }
 
-figure { 
-	margin:0; 
+figure {
+  margin: 0;
 }
 
-small { 
-	padding:15px 0; 
-	display:block;
+small {
+  padding: 15px 0;
+  display: block;
 }
 
 hr {
-	color:lighten(#9B9895, 20%);
+  color: lighten(#9b9895, 20%);
 }

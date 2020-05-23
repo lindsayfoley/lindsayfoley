@@ -1,12 +1,14 @@
 @import "_base.scss";
 
-.AnchorButton {
+button {
+  width: 250px;
+  @include primary-font;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
   background: inherit;
   color: $light-color;
-  width: 250px;
-  line-height: 35px;
   border: $default-border;
-  font-weight: bold;
   transition: all 0.3s ease 0s;
 
   &:hover {

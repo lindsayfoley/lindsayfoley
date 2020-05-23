@@ -1,5 +1,5 @@
 import React from "react";
-import AnchorExternal from "./AnchorExternal";
+import Anchor from "./Anchor";
 import { ICompanyDetails } from "../utils/workExperience";
 import "../public/styles/_flip-card.scss";
 
@@ -48,9 +48,9 @@ const JobDetailsCard: React.FunctionComponent<IJobDetailsCardProps> = ({
           {company.description}
           <hr />
           {company.cta ? (
-            <AnchorExternal link={company.link} cta={company.cta} />
+            <Anchor link={company.link} cta={company.cta} external={true} />
             ) : (
-              <AnchorExternal link={company.link} cta="Visit Site &rsaquo;" />
+              <Anchor link={company.link} cta="Visit Site &rsaquo;" external={true} />
               )}
         </div>
       </div>

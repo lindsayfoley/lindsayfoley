@@ -14,6 +14,7 @@ const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
     <>
       <Head>
         <MetaKeywords />
+        <link rel="stylesheet" href="https://use.typekit.net/ohe1rsj.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
       </Head>
       <Header />

@@ -12,7 +12,6 @@
   .flip-card {
     @include ui-card(290px, auto);
     height: 260px;
-    margin: 10px;
     background-size: contain;
     border-radius: 5px;
     overflow-y: hidden;
@@ -26,35 +25,17 @@
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       background: $accent-color;
-
-      .heading {
-        font-family: $uppercase-font;
-
-        span {
-          display: block;
-          padding: 10px 0;
-        }
-      }
-
-      .description {
-        display: none;
-      }
     }
 
     &.show-details {
       .wrapper {
+        height: 100%;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        height: 100%;
-      }
-
-      .heading span {
-        display: none;
       }
 
       .description {
         box-sizing: border-box;
-        display: block;
         padding: 10px;
       }
     }

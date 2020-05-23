@@ -12,11 +12,39 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: height 1.5s ease 0s;
+
+    .heading {
+      margin: 10px auto;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .description {
+      display: none;
+    }
   }
 
   &.show-details {
     .wrapper {
       animation: details-bg-change 1.5s forwards;
+
+      .heading span {
+        display: none;
+      }
+
+      .description {
+        display: block;
+
+        p {
+          font-size: 17px;
+        }
+      }
     }
   }
 }
