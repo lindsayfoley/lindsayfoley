@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
 
-$primary-colour: #54c0b4;
+$primary-colour: #5fa8d3;
 $light-color: #ffffff;
-$accent-color: #f5ac5e;
 $pale-accent-color: #fabb77;
-$dark-color: #338078;
+$accent-color: #f79e3f;
+$dark-accent-color: #4f8eb3;
+$dark-color: #003249;
 $italic-font: "Droid Serif", serif;
 $default-font-size: 18px;
 $small-font-size: 13px;
@@ -41,18 +42,12 @@ $smallDevices: 550px; //iPhone X landscape
   }
 }
 
-@mixin end-of-content() {
-  border-bottom: 2px solid $light-color;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
-
 @mixin ui-card($width, $height) {
   width: $width;
   height: $height;
 }
 
-@mixin row-of-elements() {
+@mixin row-of-elements {
   display: flex;
 
   @include largeScreen {
@@ -155,11 +150,6 @@ dl {
 
 ul {
   padding-left: 0;
-}
-
-dl {
-  padding: 20px;
-  margin: 0;
 }
 
 dt {

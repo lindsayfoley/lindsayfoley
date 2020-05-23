@@ -1,8 +1,8 @@
 @import "_base.scss";
 
 .companies {
-  @include end-of-content;
   @include row-of-elements;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 
   @include smallScreen {
