@@ -1,35 +1,8 @@
 module.exports = {
-  moduleFileExtensions: [
-   "ts",
-   "tsx",
-   "js"
-  ],
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   transform: {
-   "^.+\\.tsx?$": "ts-jest"
+    "^.+\\.(ts|tsx|js)?$": "ts-jest",
   },
-  testMatch: [
-   "**/*.(test|spec).(ts|tsx)"
-  ],
-  globals: {
-   "ts-jest": {
-     babelConfig: true,
-     tsConfig: "jest.tsconfig.json",
-     diagnostics: false
-   }
-  },
-  coveragePathIgnorePatterns: [
-  "/node_modules/",
-  "enzyme.js"
- ],
- setupFilesAfterEnv: ["<rootDir>/__mocks__/enzyme.js"],
-  coverageReporters: [
-  "json",
-   "lcov",
-   "text",
-   "text-summary"
-  ],
-  moduleNameMapper:{
-   "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
-   "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-  }
+  testMatch: ["**/*.(test|spec).(ts|tsx)"],
+  setupFilesAfterEnv: ["<rootDir>/setupTests.js"]
 };

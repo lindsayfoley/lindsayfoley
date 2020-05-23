@@ -15,6 +15,8 @@
   "dependencies": {
     "@webdeb/next-styles": "^1.1.0",
     "@zeit/next-sass": "^1.0.1",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "i": "^0.3.6",
     "next": "9.4.1",
     "node-sass": "^4.14.1",
@@ -41,14 +43,9 @@
     "eslint": "^7.0.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.2",
-    "jest": "^26.0.1",
+    "jest": "^25.2.2",
+    "supertest": "^4.0.2",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.3"
-  },
-  "jest":{
-    "moduleNameMapper":{
-      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
-      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-    }
- }
+  }
 }

@@ -19,6 +19,9 @@ module.exports = {
   rules: {
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
-    "react/jsx-no-target-blank": "off"
+    "react/jsx-no-target-blank": "off",
+  },
+  env: {
+    jest: true,
   }
 };
