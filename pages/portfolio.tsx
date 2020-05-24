@@ -57,7 +57,7 @@ class Portfolio extends React.PureComponent<IPortfolioState> {
               />
             ))}
           </section>
-          <Nav buttons={[
+          <Nav buttonArr={[
             { link: "about", cta: "about me" },
             { link: "/", cta: "back to home" }
           ]} />

@@ -18,7 +18,7 @@ const Home: React.FunctionComponent = () =>
     </header>
     <section id="home">
       <Intro />
-      <Nav buttons={[
+      <Nav buttonArr={[
         { link: "portfolio", cta: "View my work" },
         { link: "about", cta: "about me" }
       ]} />

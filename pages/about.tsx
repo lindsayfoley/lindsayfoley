@@ -58,7 +58,7 @@ const About: React.FunctionComponent = () => {
             </dl>
           </div>
         </section>
-        <Nav buttons={[
+        <Nav buttonArr={[
           { link: "portfolio", cta: "View my work" },
           { link: "/", cta: "back to home" }
         ]} />
