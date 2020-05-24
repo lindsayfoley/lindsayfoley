@@ -1,3 +1,5 @@
+@import "_base.scss";
+
 #home {
   padding: 0 20px;
   
@@ -9,5 +11,9 @@
     margin: 20px auto 0 auto;
     max-width: 540px;
     width: 100%;
+
+    @include smallScreen {
+      margin-top: 40px;
+    }
   }
 }

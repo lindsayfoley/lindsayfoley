@@ -12,11 +12,16 @@ const About: React.FunctionComponent = () => {
         <title>About Lindsay Foley, A Web Developer Based In London</title>
         <meta name="description" content="A Front End Web Developer from London with years of development experience. Find out more about my skills in HTML, CSS, JavaScript, UX and Web Optimisation." />
       </Head>
+      <header>
+        <h1 itemProp="name">
+          <a href="/">All About Me</a>
+        </h1>
+      </header>
       <main>
         <p>I’ve been busy working on my little corner of the internet for quite a while so thank you for stopping by!</p>
         <p>If you've been here before the site may look unchanged but I do update it every so often
-        utilising new skills that I learned. Currently this is a React app written in Typescript,
-        on the Next.js framework, styled using SASS.</p>
+        utilising new skills that I learn. Currently it's a React app written in Typescript,
+        on the Next.js framework and styled using SASS.</p>
         <section id="skills">
           <div>
             <h3>My experience</h3>

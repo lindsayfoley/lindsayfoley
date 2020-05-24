@@ -40,6 +40,11 @@ class Portfolio extends React.PureComponent<IPortfolioState> {
           <title>View My Web Development Portfolio and Past Projects</title>
           <meta name="description" content="Lindsay Foley is a web developer in London, have a look at some completed projects here." />
         </Head>
+        <header>
+          <h1 itemProp="name">
+            <a href="/">My Portfolio</a>
+          </h1>
+        </header>
         <main>
           <section className="companies">
             {workExperience.map(job => (

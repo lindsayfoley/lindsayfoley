@@ -12,10 +12,6 @@ button {
   transition: all 0.3s ease 0s;
   margin: 0 auto;
 
-  @include smallScreen {
-    margin-bottom: 15px;
-  }
-
   &:hover {
     background: $light-color;
     color: $primary-colour;
