@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders correctly 1`] = `
+<Nav
+  buttonArr={
+    Array [
+      Object {
+        "cta": "View my work",
+        "link": "portfolio",
+      },
+      Object {
+        "cta": "back to home",
+        "link": "/",
+      },
+    ]
+  }
+>
+  <nav>
+    <Button
+      cta="View my work"
+      key="0"
+      link="portfolio"
+    >
+      <Link
+        href="portfolio"
+      >
+        <button
+          itemProp="url"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          View my work
+        </button>
+      </Link>
+    </Button>
+    <Button
+      cta="back to home"
+      key="1"
+      link="/"
+    >
+      <Link
+        href="/"
+      >
+        <button
+          itemProp="url"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          back to home
+        </button>
+      </Link>
+    </Button>
+  </nav>
+</Nav>
+`;
