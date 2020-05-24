@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Anchor, { IAnchorProps } from '../../../../../components/Anchor';
+import Anchor, { IAnchorProps } from '../../../../components/Anchor';
 
 const defaultProps: Pick<IAnchorProps, 'link'> = {
     link: 'test'

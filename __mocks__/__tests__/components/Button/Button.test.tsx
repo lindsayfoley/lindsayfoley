@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from 'enzyme';
-import Button, { IButtonProps } from '../../../../../components/Button';
+import Button, { IButtonProps } from '../../../../components/Button';
 
 const defaultProps: IButtonProps = {
     link: 'test link',

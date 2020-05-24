@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from 'enzyme';
-import Nav, { INavProps } from '../../../../../components/Nav';
-import Button, { IButtonProps } from '../../../../../components/Button';
+import Nav, { INavProps } from '../../../../components/Nav';
+import Button, { IButtonProps } from '../../../../components/Button';
 
 const mockButtonOne: IButtonProps = {
     link: "portfolio",
