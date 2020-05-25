@@ -19,8 +19,8 @@ const Home: React.FunctionComponent = () =>
             <p>On the plus side, here's a nice illustration of my cat Scampi that I've been trying to incorporate into this site.</p>
             <img src="/images/scampi.png" alt="An illustration of Scampi, my cat" />
             <Nav buttonArr={[
-                { link: "about", cta: "about me" },
-                { link: "portfolio", cta: "View my work" }
+                { link: "/about", cta: "about me" },
+                { link: "/portfolio", cta: "View my work" }
             ]} />
         </main>
     </Layout>
