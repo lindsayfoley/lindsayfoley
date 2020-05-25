@@ -8,12 +8,16 @@
   }
 
   img {
-    margin: 20px auto 0 auto;
+    margin: 30px auto 0 auto;
     max-width: 540px;
     width: 100%;
 
     @include smallScreen {
       margin-top: 40px;
     }
+  }
+
+  nav {
+    margin-top: 0;
   }
 }

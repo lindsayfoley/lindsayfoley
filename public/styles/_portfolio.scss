@@ -2,7 +2,6 @@
 
 .companies {
   @include row-of-elements;
-  margin-bottom: 30px;
   flex-wrap: wrap;
 
   @include smallScreen {
