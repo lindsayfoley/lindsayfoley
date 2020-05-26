@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm run build
+npm run start && npm run build
 cp out /tmp
