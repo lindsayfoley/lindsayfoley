@@ -1,6 +1,4 @@
 #!/bin/bash
 
-echo "hello"
-whoami
-pwd
-ls -R
+npm run build
+cp out /tmp
