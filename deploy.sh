@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm run start && npm run build
-cp out /tmp
+npm run build
+cp -r out/* /home/lindsay/public/lindsayfoley.co.uk/public
