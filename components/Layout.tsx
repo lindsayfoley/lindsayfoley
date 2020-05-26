@@ -13,14 +13,13 @@ const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
     <>
       <Head>
         <MetaKeywords />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58028323-2" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58028323-2" />
-            <script>
-              window.dataLayer = window.dataLayer || [];
+            __html: `window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'UA-58028323-2') />`
+              gtag('config', 'UA-58028323-2');`
           }} />
         <link rel="stylesheet" href="https://use.typekit.net/ohe1rsj.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
