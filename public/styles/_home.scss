@@ -2,9 +2,19 @@
 
 #home {
   padding: 0 20px;
+
+  @include smallScreen {
+    margin-top: 10px;
+  }
   
-  span {
-    text-transform: none;
+  h2 {
+    span {
+      text-transform: none;
+    }
+
+    @include smallScreen {
+      max-width: 230px;
+    }
   }
 
   img {
