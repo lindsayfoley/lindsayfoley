@@ -40,7 +40,8 @@ main {
       box-sizing: border-box;
     }
 
-    dt {
+    dt, h3 {
+      text-decoration: underline;
       margin-bottom: 20px;
       font-size: 25px;
     }
