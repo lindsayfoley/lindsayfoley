@@ -16,7 +16,7 @@ const Anchor: React.FunctionComponent<IAnchorProps> = ({
   external
 }) => external ? (
   <>
-    <a target="_blank" href={link} title={title}>
+    <a target="_blank" rel="noreferrer" href={link} title={title}>
       {icon && <i className={icon}></i>}{cta}
     </a>
   </>

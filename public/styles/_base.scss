@@ -18,6 +18,7 @@ $smallDevices: 550px; //iPhone X landscape
 
 @mixin primary-font {
   font-family: "orator-std", monospace;
+  font-display:swap;
   text-transform: lowercase;
   font-weight: 400;
   font-weight: 400;
@@ -56,32 +57,6 @@ $smallDevices: 550px; //iPhone X landscape
 
   @include smallScreen {
     flex-direction: column;
-  }
-}
-
-@mixin info-rollover-tiles {
-  position: relative;
-  overflow: hidden;
-
-  &:hover img {
-    opacity: 0.8;
-    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
-    transform: scale(1.15);
-  }
-
-  &:hover figcaption {
-    display: block;
-    background-color: hsla(0, 0%, 100%, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &:hover p {
-    font-size: $default-font-size;
-    color: darken($dark-color, 50%);
-    font-weight: bold;
-    padding: 32% 10px;
   }
 }
 
