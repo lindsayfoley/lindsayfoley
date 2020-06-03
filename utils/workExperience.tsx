@@ -18,7 +18,7 @@ const workExperience: ICompanyDetails[] = [
         <p>I designed and coded it using <span itemProp="keywords"> PHP, Markdown, HTML, CSS, jQuery &amp; Foundation.</span></p>
       </>
     ),
-    link: "http://comeflywithlindsay.com",
+    link: "https://comeflywithlindsay.com",
   },
   {
     id: "disney",

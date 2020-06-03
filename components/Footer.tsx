@@ -30,7 +30,7 @@ const Footer: React.FunctionComponent = () =>
         external={true}
       />
       <Anchor
-        link="http://comeflywithlindsay.com"
+        link="https://comeflywithlindsay.com"
         icon="fas fa-rss"
         title="Have a look at my blog"
         external={true}
