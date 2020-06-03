@@ -13,7 +13,7 @@ main {
     flex-direction: column;
   }
 
-  div:first-of-type {
+  > div:first-of-type {
     border-right: 10px solid $primary-colour;
 
     @include mediumScreen {
@@ -22,7 +22,7 @@ main {
     }
   }
 
-  div:last-of-type {
+  > div:last-of-type {
     border-left: 10px solid $primary-colour;
 
     @include mediumScreen {
@@ -30,7 +30,7 @@ main {
     }
   }
 
-  div {
+  > div {
     background-color: $dark-accent-color;
     width: 100%;
     padding: 20px;

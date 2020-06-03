@@ -2,10 +2,10 @@ import React from "react";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Nav from "../components/Nav";
+import CodingDrawing from "../components/css-drawings/coding";
 import "../public/styles/_about.scss";
 
 const About: React.FunctionComponent = () => {
-
   return (
     <Layout>
       <Head>
@@ -25,7 +25,7 @@ const About: React.FunctionComponent = () => {
         <section id="skills">
           <div>
             <h3>My experience</h3>
-            <img src="/images/coding.png" alt="Coding illustration" />
+            <CodingDrawing />
             <p>I have 9 years of experience working in an Ecommerce environment and have been developing professionally for about 8 years now.</p>
             <p>In that time, I've been fortunate to work for some notable companies including Oliver Bonas, Anya Hindmarch, Selfridges and Disney and most recently Charlotte Tilbury, where I joined as a Frontend Engineer working on their React site.</p>
           </div>
