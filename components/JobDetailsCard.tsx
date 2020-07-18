@@ -3,7 +3,7 @@ import Anchor from "./Anchor";
 import { ICompanyDetails } from "../utils/workExperience";
 import "../public/styles/_flip-card.scss";
 
-interface IJobDetailsCardProps {
+export interface IJobDetailsCardProps {
   company: ICompanyDetails;
   className: string;
   handleClick: (id: string) => void;
@@ -13,6 +13,10 @@ interface IJobDetailsCardProps {
 const JobDetailsCard: React.FunctionComponent<IJobDetailsCardProps> = ({ 
   company, className, handleClick, summaryIsVisible 
 }) => {
+
+  if (!company) {
+    return null;
+  }
 
   const defaultClassName = 'flip-card';
   const classNames = className !== "" && (`${className} ${defaultClassName}`);

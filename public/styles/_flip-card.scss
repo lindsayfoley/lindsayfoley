@@ -33,6 +33,7 @@
   &.show-details {
     .wrapper {
       animation: details-bg-change 1.5s forwards;
+      -webkit-backface-visibility: hidden;
 
       .heading span {
         display: none;

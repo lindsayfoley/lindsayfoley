@@ -1,0 +1,16 @@
+.spotlight-tile {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 240px;
+
+  .inner {
+    width: 75%;
+    height: 85%;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+}

@@ -19,8 +19,8 @@ const Home: React.FunctionComponent = () =>
     <section id="home">
       <Intro />
       <Nav buttonArr={[
-        { link: "portfolio", cta: "View my work" },
-        { link: "about", cta: "about me" }
+        { link: "/portfolio", cta: "View my work" },
+        { link: "/about", cta: "about me" }
       ]} />
     </section>
   </Layout>

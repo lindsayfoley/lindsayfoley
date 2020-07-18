@@ -9,9 +9,9 @@ export interface IButtonProps {
 
 const Button: React.FunctionComponent<IButtonProps> = ({ link, cta }) =>
   <Link href={link}>
-    <button itemProp="url">
+    <a className="button" itemProp="url">
       {cta}
-    </button>
+    </a>
   </Link>;
 
 export default Button;
