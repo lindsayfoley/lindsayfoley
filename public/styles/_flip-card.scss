@@ -12,8 +12,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: height 1.5s ease 0s;
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
         
     .heading {
       margin: 10px auto;
