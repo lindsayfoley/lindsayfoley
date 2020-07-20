@@ -10,12 +10,20 @@ export interface ICompanyDetails {
 
 const workExperience: ICompanyDetails[] = [
   {
+    id: "ct",
+    companyName: "Charlotte Tilbury",
+    description: (
+      <p>My first experience working on a <span itemProp="keywords">React site utilising TypeScript, Redux, SCSS, Storybook and Jest &amp; Enzyme</span>.</p>
+    ),
+    link: "https://www.charlottetilbury.com/uk",
+  },
+  {
     id: "travel-blog",
     companyName: "Come Fly With Lindsay",
     description: (
       <>
         <p>My travel blog which I launched in November 2016.</p>
-        <p>I designed and coded it using <span itemProp="keywords"> PHP, Markdown, HTML, CSS, jQuery &amp; Foundation.</span></p>
+        <p>I designed and wrote it using <span itemProp="keywords"> PHP, Markdown, HTML, CSS, jQuery &amp; Foundation.</span></p>
       </>
     ),
     link: "https://comeflywithlindsay.com",
@@ -60,7 +68,7 @@ const workExperience: ICompanyDetails[] = [
     companyName: "Selfridges",
     description: (
       <>
-        <p>I worked on Selfridges' 2014 site redesign.</p>
+        <p>I worked on the Selfridges 2014 site redesign.</p>
         <p>I migrated and <span itemProp="keywords"> developed new responsive content &amp; created HTML emails</span>.</p>
       </>
     ),
@@ -74,6 +82,14 @@ const workExperience: ICompanyDetails[] = [
       <p>I designed and developed this site using <span itemProp="keywords"> HTML, CSS, jQuery, Slick Slider &amp; the Google Maps API</span>.</p>
     ),
     link: "https://web.archive.org/web/20190625163932/http://hopelandscattery.com/",
+  },
+  {
+    id: "theyer",
+    companyName: "Theyer Fitness",
+    description: (
+      <p>My first piece of freelance work! This site was revamped in <span itemProp="dateCreated">2011</span>, it was given a new design &amp; developed in <span itemProp="keywords">HTML5 &amp; CSS3</span>.</p>
+    ),
+    link: "https://web.archive.org/web/20180810084130/http://theyerfitness.co.uk/",
   },
   {
     id: "whitestuff",
@@ -92,6 +108,14 @@ const workExperience: ICompanyDetails[] = [
     ),
     link: "https://web.archive.org/web/20160115162243/http://paw-print-productions.co.uk",
   },
+  {
+    id: "ob",
+    companyName: "Oliver Bonas",
+    description: (
+      <p itemProp="description">I joined the web team way back in <span itemProp="dateCreated">2008</span> and was responsible for <span itemProp="keywords">designing web content &amp; HTML emails</span>.</p>
+      ),
+    link: "https://www.oliverbonas.com",
+  }
 ];
 
 export default workExperience;

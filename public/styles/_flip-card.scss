@@ -12,7 +12,9 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: height 1.5s ease 0s;
-
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+        
     .heading {
       margin: 10px auto;
 
@@ -33,7 +35,6 @@
   &.show-details {
     .wrapper {
       animation: details-bg-change 1.5s forwards;
-      -webkit-backface-visibility: hidden;
 
       .heading span {
         display: none;

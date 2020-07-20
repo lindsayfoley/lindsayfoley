@@ -27,7 +27,7 @@ body {
       flex-direction: column;
     }
 
-    button {
+    .button {
       @include smallScreen {
         margin-top: 20px;
       }

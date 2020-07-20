@@ -4,7 +4,7 @@ import Nav, { INavProps } from '../../../../components/Nav';
 import Button, { IButtonProps } from '../../../../components/Button';
 
 const mockButtonOne: IButtonProps = {
-    link: "portfolio",
+    link: "/portfolio",
     cta: "View my work"
 }
 
