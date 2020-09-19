@@ -23,7 +23,7 @@ const workExperience: ICompanyDetails[] = [
     description: (
       <>
         <p>My travel blog which I launched in November 2016.</p>
-        <p>I designed and wrote it using <span itemProp="keywords"> PHP, Markdown, HTML, CSS, jQuery &amp; Foundation.</span></p>
+        <p>It's a React app written in <span itemProp="keywords">TypeScript, using SCSS &amp; styled JSX</span></p>
       </>
     ),
     link: "https://comeflywithlindsay.com",
