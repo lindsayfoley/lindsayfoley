@@ -5,7 +5,7 @@ import Intro from "../components/Intro";
 import Nav from "../components/Nav";
 import "../public/styles/_home.scss";
 
-const Home: React.FunctionComponent = () =>
+const IndexPage: React.FunctionComponent = () =>
   <Layout>
     <Head>
       <title>I'm Lindsay Foley, A Front End Web Developer Based In London</title>
@@ -25,4 +25,4 @@ const Home: React.FunctionComponent = () =>
     </section>
   </Layout>
 
-export default Home;
+export default IndexPage;

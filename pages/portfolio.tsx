@@ -6,13 +6,13 @@ import JobDetailsCard from "../components/JobDetailsCard";
 import Nav from "../components/Nav";
 import "../public/styles/_portfolio.scss";
 
-interface IPortfolioState {
+interface IPortfolioPageState {
   cardsWithJobDetailsVisible: string[];
 }
 
-class Portfolio extends React.PureComponent<IPortfolioState> {
+class PortfolioPage extends React.PureComponent<IPortfolioPageState> {
 
-  state: IPortfolioState = {
+  state: IPortfolioPageState = {
     cardsWithJobDetailsVisible: [],
   };
 
@@ -67,4 +67,4 @@ class Portfolio extends React.PureComponent<IPortfolioState> {
   }
 }
 
-export default Portfolio;
+export default PortfolioPage;

@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 import Coding from "../components/css-drawings/Coding";
 import "../public/styles/_about.scss";
 
-const About: React.FunctionComponent = () => {
+const AboutPage: React.FunctionComponent = () => {
   return (
     <Layout>
       <Head>
@@ -67,4 +67,4 @@ const About: React.FunctionComponent = () => {
   );
 }
 
-export default About;
+export default AboutPage;

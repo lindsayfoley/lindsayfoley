@@ -13,7 +13,7 @@ const workExperience: ICompanyDetails[] = [
     id: "ct",
     companyName: "Charlotte Tilbury",
     description: (
-      <p>My first experience working on a <span itemProp="keywords">React site utilising TypeScript, Redux, SCSS, Storybook and Jest &amp; Enzyme</span>.</p>
+      <p>This site is a <span itemProp="keywords">React app written in TypeScript, utlising Redux, SCSS, Storybook and Jest &amp; Enzyme for unit tests</span>.</p>
     ),
     link: "https://www.charlottetilbury.com/uk",
   },
@@ -22,8 +22,8 @@ const workExperience: ICompanyDetails[] = [
     companyName: "Come Fly With Lindsay",
     description: (
       <>
-        <p>My travel blog which I launched in November 2016.</p>
-        <p>It's a React app written in <span itemProp="keywords">TypeScript, using SCSS &amp; styled JSX</span></p>
+        <p>My travel blog which launched in Nov 2016.</p>
+        <p>Recently updated to React written in <span itemProp="keywords">TypeScript, using SCSS &amp; styled JSX</span></p>
       </>
     ),
     link: "https://comeflywithlindsay.com",

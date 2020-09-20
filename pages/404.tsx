@@ -2,10 +2,9 @@ import React from "react";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Nav from "../components/Nav";
-import "../public/styles/_home.scss";
 import Scampi from "../components/css-drawings/Scampi";
 
-const Home: React.FunctionComponent = () =>
+const ErrorPage: React.FunctionComponent = () =>
     <Layout>
         <Head>
             <title>Uh-oh that page doesn't exist</title>
@@ -26,4 +25,4 @@ const Home: React.FunctionComponent = () =>
         </main>
     </Layout>
 
-export default Home;
+export default ErrorPage;
