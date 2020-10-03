@@ -13,7 +13,7 @@ const workExperience: ICompanyDetails[] = [
     id: "ct",
     companyName: "Charlotte Tilbury",
     description: (
-      <p>This site is a <span itemProp="keywords">React app written in TypeScript, utilising Redux, SCSS, Storybook and Jest &amp; Enzyme for unit tests</span>.</p>
+      <p>Working on a <span itemProp="keywords">React app written in TypeScript, using Redux &amp; SCSS. Experience with Jest &amp; Enzyme, Storybook &amp; Contentful CMS</span>.</p>
     ),
     link: "https://www.charlottetilbury.com/uk",
   },
@@ -32,7 +32,7 @@ const workExperience: ICompanyDetails[] = [
     id: "disney",
     companyName: "Disney Holidays",
     description: (
-      <p>I co-developed this site making it adaptive &amp; responsive using <span itemProp="keywords"> Foundation &amp; RESS principles</span> resulting in a better UX.</p>
+      <p>I made this app adaptive/responsive, utilising <span itemProp="keywords">RESS principles. Writing most of the JavaScript, jQuery, CSS &amp; setting up e2e tests</span>.</p>
     ),
     link: "http://www.disneyholidays.co.uk",
   },
@@ -42,7 +42,7 @@ const workExperience: ICompanyDetails[] = [
     description: (
       <>
         <p>This website underwent a complete refresh in order to modernise it.</p>
-        <p>It's written in <span itemProp="keywords">HTML, CSS, jQuery &amp; Foundation</span>.</p>
+        <p>It was written in <span itemProp="keywords">HTML, jQuery and CSS</span>.</p>
       </>
     ),
     link: "http://jesusinaction.org.uk",
