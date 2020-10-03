@@ -1,47 +1,42 @@
 @import "_base.scss";
 
-body {
-  min-width: 320px;
+section {
+  flex: 1;
+}
 
-  main {
-    max-width: 900px;
-    margin: 30px auto 0 auto;
+main {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
 
-    @include mediumScreen {
-      padding: 0 10px;
-    }
+  @include mediumScreen {
+    padding: 0 10px;
+  }
+}
+
+header {
+  margin-top: 20px;
+}
+
+nav {
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  @include smallScreen {
+    flex-direction: column;
   }
 
-  header {
-    margin-top: 20px;
-  }
-
-  nav {
-    max-width: 800px;
-    margin: 30px auto 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  .button {
     @include smallScreen {
-      flex-direction: column;
-    }
-
-    .button {
-      @include smallScreen {
-        margin-top: 20px;
-      }
+      margin-top: 20px;
     }
   }
+}
 
-  footer {
-    width: 100%;
-    margin-top: 40px;
-    padding-top: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: $dark-color;
-    color: $pale-accent-color;
-  }
+footer {
+  width: 100%;
+  background-color: $dark-color;
+  color: $pale-accent-color;
 }

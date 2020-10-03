@@ -64,6 +64,13 @@ body {
   @include primary-font;
   background-color: $primary-colour;
   margin: 0;
+  min-width: 320px;
+
+  > div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 p,
