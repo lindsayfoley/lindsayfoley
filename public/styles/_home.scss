@@ -1,7 +1,14 @@
 @import "_base.scss";
 
 #home {
-  padding: 0 20px;
+  min-height: calc(100vh - 130px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include smallScreen {
+    min-height: calc(100% - 90px);
+  }
 
   @include smallScreen {
     display: flex;
