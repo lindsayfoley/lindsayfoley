@@ -32,7 +32,7 @@ const AboutPage: React.FunctionComponent = () => {
           <div>
             <dl>
               <dt>Web Development Skills</dt>
-              <dd>HTML, CSS, SCSS, CSS-in-JS</dd>
+              <dd>HTML, CSS, SCSS, Styled JSX</dd>
               <dd>Typescript, JavaScript, jQuery</dd>
               <dd>React inc. hooks and Redux</dd>
               <dd>Next.js &amp; CRA frameworks</dd>

@@ -1,24 +1,32 @@
 @import "_base.scss";
 
 section {
-  flex: 1;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include smallScreen {
+    min-height: calc(100vh - 90px);
+  }
 }
 
 main {
   max-width: 900px;
-  margin: 30px auto 0 auto;
+  margin: 60px auto 0 auto;
 
   @include mediumScreen {
     padding: 0 10px;
   }
-}
 
-header {
-  margin-top: 20px;
+  @include smallScreen {
+    margin-top: 40px;
+  }
 }
 
 nav {
   max-width: 800px;
+  width: 100%;
   margin: 30px auto 0 auto;
   display: flex;
   flex-direction: row;
