@@ -4,10 +4,11 @@ exports[`Button renders correctly 1`] = `
 <Link
   href="test link"
 >
-  <button
+  <a
+    className="button"
     itemProp="url"
   >
     test cta
-  </button>
+  </a>
 </Link>
 `;

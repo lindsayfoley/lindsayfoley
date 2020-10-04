@@ -1,10 +1,20 @@
 module.exports = {
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  collectCoverageFrom: [
+    '**/*.{js,jsx,ts,tsx}',
+    '!**/*.d.ts',
+    '!**/node_modules/**',
+  ],
+  setupFilesAfterEnv: ['<rootDir>/__mocks__/setupTests.js'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   transform: {
-    "^.+\\.(ts|tsx|js)?$": "ts-jest",
+    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest'
   },
-  testMatch: ["**/*.(test|spec).(ts|tsx)"],
-  setupFilesAfterEnv: ["<rootDir>/__mocks__/setupTests.js"],
-  moduleNameMapper: { "^.+\\.(css|scss)$": "<rootDir>/__mocks__/SCSSStub.js" },
+  transformIgnorePatterns: [
+    '/node_modules/',
+    '^.+\\.module\\.scss$',
+  ],
+  moduleNameMapper: {
+    '\\.scss$': '<rootDir>/__mocks__/SCSSStub.js',
+  },
   snapshotSerializers: ["enzyme-to-json/serializer"]
-};
+}

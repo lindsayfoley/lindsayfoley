@@ -6,7 +6,7 @@ exports[`Nav renders correctly 1`] = `
     Array [
       Object {
         "cta": "View my work",
-        "link": "portfolio",
+        "link": "/portfolio",
       },
       Object {
         "cta": "back to home",
@@ -19,18 +19,20 @@ exports[`Nav renders correctly 1`] = `
     <Button
       cta="View my work"
       key="0"
-      link="portfolio"
+      link="/portfolio"
     >
       <Link
-        href="portfolio"
+        href="/portfolio"
       >
-        <button
+        <a
+          className="button"
+          href="/portfolio"
           itemProp="url"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           View my work
-        </button>
+        </a>
       </Link>
     </Button>
     <Button
@@ -41,13 +43,15 @@ exports[`Nav renders correctly 1`] = `
       <Link
         href="/"
       >
-        <button
+        <a
+          className="button"
+          href="/"
           itemProp="url"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
           back to home
-        </button>
+        </a>
       </Link>
     </Button>
   </nav>
