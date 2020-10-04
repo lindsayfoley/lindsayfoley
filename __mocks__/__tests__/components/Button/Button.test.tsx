@@ -21,8 +21,6 @@ describe('Button', () => {
 
     it('renders a button', () => {
         const wrapper = setup();
-        expect(wrapper.find('.button').exists).toBeTruthy();
-        expect(wrapper.find('[href]').length).toBe(1);
         expect(wrapper.prop('href')).toEqual(defaultProps.link);
         expect(wrapper.find('.button').text()).toEqual(defaultProps.cta);
     });

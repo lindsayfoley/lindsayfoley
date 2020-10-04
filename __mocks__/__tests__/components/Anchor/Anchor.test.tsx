@@ -2,48 +2,50 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Anchor, { IAnchorProps } from '../../../../components/Anchor';
 
-const defaultProps: Pick<IAnchorProps, 'link'> = {
-    link: 'test'
+const defaultProps: IAnchorProps = {
+    link: '/portfolio',
+    icon: 'fa-github-alt',
+    cta: 'View my GitHub',
+    title: 'Find me on GitHub;',
+    external: false
 }
 
 const setup = (props = {}) => {
-    const setupProps: IAnchorProps = { ...defaultProps, ...props }
+    const setupProps: IAnchorProps = { link: defaultProps.link, ...props }
     return shallow(<Anchor {...setupProps} />);
 };
 
 describe('Anchor', () => {
 
     it('renders correctly', () => {
-        const wrapper = setup();
+        const wrapper = setup(defaultProps);
         expect(wrapper).toMatchSnapshot();
     });
 
-    it('only renders a link', () => {
+    it('renders a link', () => {
         const wrapper = setup();
         expect(wrapper.find('[href]').length).toBe(1);
-        expect(wrapper.find('i').length).toBe(0);
-        expect(wrapper.find('[title]').length).toBe(0);
-        expect(wrapper.find('a').text()).toEqual('');
     });
 
     it('renders an icon', () => {
-        const wrapper = setup({ icon: 'fa fa-paper-plane' });
+        const wrapper = setup({ icon: defaultProps.icon });
         expect(wrapper.find('i').length).toBe(1);
+        expect(wrapper.find('i').hasClass(defaultProps.icon));
     });
 
     it('adds a title attribute', () => {
-        const wrapper = setup({ title: 'test title' });
-        expect(wrapper.find('[title]').length).toBe(1);
+        const wrapper = setup({ title: defaultProps.title });
+        expect(wrapper.find('a').props()).toHaveProperty('title', defaultProps.title);
     });
 
     it('displays a cta', () => {
-        const testCta = 'I am a call to action';
-        const wrapper = setup({ cta: testCta });
-        expect(wrapper.find('a').text()).toEqual(testCta);
+        const wrapper = setup({ cta: defaultProps.cta });
+        expect(wrapper.find('a').text()).toEqual(defaultProps.cta);
     });
 
-    it('adds target blank to links when external is true', () => {
+    it('adds extra attributes to links when external is true', () => {
         const wrapper = setup({ external: true });
         expect(wrapper.find('a').prop('target')).toEqual('_blank');
+        expect(wrapper.find('a').prop('rel')).toEqual('noreferrer');
     });
 });

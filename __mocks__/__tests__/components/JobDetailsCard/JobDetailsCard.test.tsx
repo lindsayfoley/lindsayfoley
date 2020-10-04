@@ -13,7 +13,7 @@ const companyDetailsDefaultProps: ICompanyDetails = {
 const defaultProps: IJobDetailsCardProps = {
     company: companyDetailsDefaultProps,
     className: 'testClass',
-    handleClick: jest.fn,
+    handleClick: jest.fn(),
     summaryIsVisible: true
 }
 
