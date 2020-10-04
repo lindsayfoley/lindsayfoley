@@ -1,13 +1,13 @@
 @import "_base.scss";
 
 section {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 130px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @include smallScreen {
-    min-height: calc(100vh - 90px);
+    min-height: calc(100% - 90px);
   }
 }
 
