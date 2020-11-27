@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 import Button, { IButtonProps } from '../../../../components/Button';
 
 const defaultProps: IButtonProps = {
@@ -14,13 +14,17 @@ const setup = (props = {}) => {
 
 describe('Button', () => {
 
+    let wrapper: ShallowWrapper;
+
+    beforeEach(() => {
+        wrapper = setup();
+    });
+
     it('renders correctly', () => {
-        const wrapper = setup();
         expect(wrapper).toMatchSnapshot();
     });
 
     it('renders a button', () => {
-        const wrapper = setup();
         expect(wrapper.prop('href')).toEqual(defaultProps.link);
         expect(wrapper.find('.button').text()).toEqual(defaultProps.cta);
     });

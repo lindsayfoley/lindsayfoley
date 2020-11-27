@@ -40,7 +40,6 @@ exports[`JobDetailsCard renders correctly 1`] = `
       <hr />
       <Anchor
         cta="Visit Site ›"
-        external={true}
         link="scampithecat.com"
       />
     </div>

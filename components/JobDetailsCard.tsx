@@ -5,7 +5,7 @@ import "../public/styles/_flip-card.scss";
 
 export interface IJobDetailsCardProps {
   company: ICompanyDetails;
-  className: string;
+  className?: string;
   handleClick: (id: string) => void;
   summaryIsVisible: boolean;
 }
@@ -19,9 +19,9 @@ const JobDetailsCard: React.FunctionComponent<IJobDetailsCardProps> = ({
   }
 
   const defaultClassName = 'flip-card';
-  const classNames = className !== "" && (`${className} ${defaultClassName}`);
+  const classNames = className !== "" && `${className} ${defaultClassName}`;
 
-  const handleOnKeyDown = (event) => {
+  const handleOnKeyDown = (event: React.KeyboardEvent<HTMLElement>) => {
     if (event.key === " " || event.key === "Enter" || event.key === "Spacebar") {
       handleClick(company.id);
     }
@@ -52,10 +52,10 @@ const JobDetailsCard: React.FunctionComponent<IJobDetailsCardProps> = ({
           {company.description}
           <hr />
           {company.cta ? (
-            <Anchor link={company.link} cta={company.cta} external={true} />
-            ) : (
-              <Anchor link={company.link} cta="Visit Site &rsaquo;" external={true} />
-              )}
+            <Anchor link={company.link} cta={company.cta} />
+          ) : (
+            <Anchor link={company.link} cta="Visit Site &rsaquo;" />
+          )}
         </div>
       </div>
     </article>

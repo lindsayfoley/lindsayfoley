@@ -7,31 +7,31 @@ import Nav from "../components/Nav";
 import "../public/styles/_portfolio.scss";
 
 interface IPortfolioPageState {
-  cardsWithJobDetailsVisible: string[];
+  visibleJobDetailsCard: string[];
 }
 
 class PortfolioPage extends React.PureComponent<IPortfolioPageState> {
 
   state: IPortfolioPageState = {
-    cardsWithJobDetailsVisible: [],
+    visibleJobDetailsCard: [],
   };
 
   handleClick = (id: string) => {
-    const { cardsWithJobDetailsVisible } = this.state;
-    let updatedJobs: string[] = [...cardsWithJobDetailsVisible];
+    const { visibleJobDetailsCard } = this.state;
+    let updatedJobs: string[] = [...visibleJobDetailsCard];
 
-    if (cardsWithJobDetailsVisible.includes(id)) {
-      updatedJobs = cardsWithJobDetailsVisible.filter(cardId => cardId !== id);
-      this.setState({ cardsWithJobDetailsVisible: updatedJobs });
+    if (visibleJobDetailsCard.includes(id)) {
+      updatedJobs = visibleJobDetailsCard.filter(cardId => cardId !== id);
+      this.setState({ visibleJobDetailsCard: updatedJobs });
     } else {
       updatedJobs.push(id)
       this.setState({
-        cardsWithJobDetailsVisible: updatedJobs,
+        visibleJobDetailsCard: updatedJobs,
       });
     }
   };
 
-  hasVisibleJobSummary = (id: string) => this.state.cardsWithJobDetailsVisible.includes(id);
+  hasVisibleJobSummary = (id: string) => this.state.visibleJobDetailsCard.includes(id);
 
   render() {
     return (

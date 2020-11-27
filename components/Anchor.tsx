@@ -4,7 +4,7 @@ export interface IAnchorProps {
   link: string;
   icon?: string;
   cta?: string;
-  title?: string;
+  titleText?: string;
   external?: boolean;
 }
 
@@ -12,13 +12,12 @@ const Anchor: React.FunctionComponent<IAnchorProps> = ({
   link,
   icon,
   cta,
-  title,
-  external
+  titleText,
+  external = true
 }) => {
-
   const anchorProps = {
     href: link,
-    title
+    title: titleText || ''
   }
 
   const props = external

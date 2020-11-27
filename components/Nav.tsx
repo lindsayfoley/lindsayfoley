@@ -7,13 +7,13 @@ export interface INavProps {
 }
 
 const Nav: React.FunctionComponent<INavProps> = ({ buttonArr }) => {
-  if (!buttonArr || buttonArr.length < 1) {
+  if (buttonArr.length < 1) {
     return null;
   }
 
   return (
     <nav>
-      {buttonArr.map((button, index) => <Button {...button} key={index} />)}
+      {buttonArr.map(button => <Button {...button} key={button.cta} />)}
     </nav>
   )
 }

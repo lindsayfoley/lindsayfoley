@@ -3,11 +3,8 @@
 exports[`Anchor renders correctly 1`] = `
 <a
   href="/portfolio"
-  title="Find me on GitHub;"
->
-  <i
-    className="fa-github-alt"
-  />
-  View my GitHub
-</a>
+  rel="noreferrer"
+  target="_blank"
+  title=""
+/>
 `;
