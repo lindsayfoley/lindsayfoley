@@ -26,20 +26,21 @@ const AboutPage: React.FunctionComponent = () => {
           <div>
             <h3>My experience</h3>
             <Coding />
-            <p>I have 10 years of experience working in Ecommerce and have been developing professionally for 9 years.</p>
-            <p>In that time, I've been very fortunate to work for notable companies including Oliver Bonas, Anya Hindmarch, Selfridges, Disney and most recently Charlotte Tilbury, where I work as a Frontend Engineer on their React site.</p>
+            <p>I have many years of experience working in Ecom and have been developing professionally for 10+ years.</p>
+            <p>In that time, I've been very lucky to work for some notable companies including Selfridges, Disney, Charlotte Tilbury and most recently The Times. I've also worked on many projects from CRO initiatives to improving web performance, to building component libraries.</p>
           </div>
           <div>
             <dl>
               <dt>Web Development Skills</dt>
-              <dd>HTML, CSS, SCSS, Styled JSX</dd>
+              <dd>HTML, CSS, SCSS, Styled JSX &amp; Styled Components</dd>
               <dd>Typescript, JavaScript, jQuery</dd>
-              <dd>React inc. hooks and Redux</dd>
+              <dd>React and Redux</dd>
+              <dd>GraphQL and REST APIs</dd>
               <dd>Next.js &amp; CRA frameworks</dd>
               <dd>Accessibility</dd>
-              <dd>Unit testing frameworks; Jest, Enzyme, Mocha</dd>
+              <dd>Jest, Enzyme, Mocha, React Testing Library</dd>
               <dd>A bit of PHP, VB &amp; SQL</dd>
-              <dd>UI frameworks; Foundation &amp; Bootstrap</dd>
+              <dd>Foundation &amp; Bootstrap</dd>
               <dd>A/B and MVT testing</dd>
               <dd>Version control via Git &amp; SVN</dd>
               <dd>Building responsive HTML emails</dd>
