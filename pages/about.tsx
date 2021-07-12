@@ -26,29 +26,31 @@ const AboutPage: React.FunctionComponent = () => {
           <div>
             <h3>My experience</h3>
             <Coding />
-            <p>I have many years of experience working in Ecom and have been developing professionally for 10+ years.</p>
-            <p>In that time, I've been very lucky to work for some notable companies including Selfridges, Disney, Charlotte Tilbury and most recently The Times. I've also worked on many projects from CRO initiatives to improving web performance, to building component libraries.</p>
+            <p>I've worked in a variety of sectors including retail, travel and publishing and have been developing professionally for 10+ years.</p>
+            <p>In that time, I've been lucky to work for some notable companies including Selfridges, Disney, Charlotte Tilbury, The Times and most recently BT where I joined as a Lead Engineer.</p>
+            <p>I've also worked on many projects from CRO initiatives to improving web performance, to building component libraries.</p>
           </div>
           <div>
             <dl>
               <dt>Web Development Skills</dt>
-              <dd>HTML, CSS, SCSS, Styled JSX &amp; Styled Components</dd>
-              <dd>Typescript, JavaScript, jQuery</dd>
+              <dd>HTML, CSS, SCSS, Styled JSX, Styled Components, Material UI</dd>
+              <dd>Typescript, JavaScript, Dust.js, jQuery. A bit of PHP, VB &amp; SQL</dd>
+              <dd>Node &amp; Express</dd>
               <dd>React and Redux</dd>
-              <dd>GraphQL and REST APIs</dd>
-              <dd>Next.js &amp; CRA frameworks</dd>
-              <dd>Accessibility</dd>
-              <dd>Jest, Enzyme, Mocha, React Testing Library</dd>
-              <dd>A bit of PHP, VB &amp; SQL</dd>
+              <dd>Experience with GraphQL, Apollo Client and consuming REST APIs</dd>
+              <dd>Next.js, CRA, Gatsby frameworks</dd>
+              <dd>A11y best practices</dd>
+              <dd>Jest, Enzyme, Mocha, Cypress, React Testing Library</dd>
               <dd>Foundation &amp; Bootstrap</dd>
-              <dd>A/B and MVT testing</dd>
-              <dd>Version control via Git &amp; SVN</dd>
+              <dd>A/B &amp; MVT testing</dd>
+              <dd>Web performance</dd>
+              <dd>Git &amp; SVN</dd>
               <dd>Building responsive HTML emails</dd>
               <dd>Tooling; Webpack, NPM, Babel, Gulp, Storybook</dd>
-              <dd>Vast CMS platforms; Contentful, Drupal, Wordpress, Squarespace</dd>
+              <dd>CMS; Contentful, Drupal, Wordpress, Squarespace, AEM</dd>
               <dd>Graphic design, UI/UX design principles &amp; usability testing</dd>
               <dd>Qualified Digital Marketer</dd>
-              <dd>SEO best practises</dd>
+              <dd>SEO best practices</dd>
             </dl>
           </div>
         </section>
