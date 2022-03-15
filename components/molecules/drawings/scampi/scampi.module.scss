@@ -1,0 +1,137 @@
+.scampi {
+  background-color: #e67881;
+
+  .inner {
+    background-color: #eaaaaf;
+
+    *,
+    *::before,
+    *::after {
+      position: absolute;
+      content: "";
+    }
+  }
+
+  .head {
+    width: 65%;
+    height: 30%;
+    top: 50px;
+    left: 55px;
+    border-radius: 50%;
+    background-color: #000000;
+
+    &::before,
+    &::after {
+      top: -15px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 30px solid #000000;
+    }
+
+    &::before {
+      left: 8px;
+      transform: rotate(-20deg);
+    }
+
+    &::after {
+      right: 8px;
+      transform: rotate(20deg);
+    }
+  }
+
+  .eye {
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 2;
+
+    &::before {
+      top: 4px;
+      left: 4px;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background-color: #ead446;
+      z-index: 3;
+    }
+
+    &::after {
+      top: 8px;
+      left: 11px;
+      width: 2px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: #000000;
+      z-index: 4;
+    }
+  }
+
+  .eye:first-of-type {
+    left: 22px;
+  }
+
+  .eye:nth-of-type(2) {
+    right: 22px;
+  }
+
+  .nose {
+    width: 16px;
+    height: 8px;
+    top: 55%;
+    left: 58px;
+    border-radius: 50%;
+    background-color: #f79398;
+    z-index: 2;
+  }
+
+  .body {
+    width: 40%;
+    height: 60%;
+    top: 100px;
+    left: 80px;
+    border-radius: 50%;
+    background-color: #000000;
+
+    &::before {
+      top: 16px;
+      left: 16px;
+      width: 50px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      z-index: 2;
+    }
+  }
+
+  .paw {
+    width: 15px;
+    height: 80px;
+    top: -15px;
+    border-radius: 50%;
+    background-color: #000000;
+
+    &::before {
+      bottom: 3px;
+      left: 4px;
+      width: 6px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      z-index: 3;
+    }
+  }
+
+  .paw:first-of-type {
+    left: 0;
+    transform: rotate(60deg);
+  }
+
+  .paw:nth-of-type(2) {
+    right: 0;
+    transform: rotate(-60deg);
+  }
+}

@@ -1,0 +1,25 @@
+@import "/public/styles/index.scss";
+
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: $dark-color;
+  color: $pale-accent-color;
+
+  a {
+    color: $pale-accent-color;
+  }
+
+  i {
+    vertical-align: middle;
+  }
+
+  .social-icons a i {
+    color: $pale-accent-color;
+    font-size: $medium-font-size;
+  }
+
+  .social-icons a:not(:first-of-type) {
+    margin-left: 25px;
+  }
+}

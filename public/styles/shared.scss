@@ -1,0 +1,18 @@
+$default-border: 1px solid white;
+
+@mixin ui-card($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin row-of-elements {
+  display: flex;
+
+  @include largeScreen {
+    flex-direction: row;
+  }
+
+  @include smallScreen {
+    flex-direction: column;
+  }
+}

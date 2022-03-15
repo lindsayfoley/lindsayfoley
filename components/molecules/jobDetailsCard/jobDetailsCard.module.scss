@@ -1,0 +1,61 @@
+@import "/public/styles/index.scss";
+
+.flip-card {
+  position: relative;
+  margin: 5px auto;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  .wrapper {
+    width: 100%;
+    color: $light-color;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: height 1.5s ease 0s;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+
+    .heading {
+      margin: 10px auto;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .description {
+      display: none;
+    }
+  }
+
+  &.show-details {
+    .wrapper {
+      animation: details-bg-change 1.5s forwards;
+
+      .heading span {
+        display: none;
+      }
+
+      .description {
+        display: block;
+
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes details-bg-change {
+  from {
+    background-color: $accent-color;
+  }
+  to {
+    background-color: rgba(151, 148, 145, 1);
+  }
+}

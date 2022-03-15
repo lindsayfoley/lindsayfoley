@@ -1,0 +1,58 @@
+@import "/public/styles/index.scss";
+
+.main {
+  margin-top: 30px;
+}
+
+.skills {
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  @include smallScreen {
+    flex-direction: column;
+  }
+
+  > div:first-of-type {
+    border-right: 10px solid $primary-colour;
+
+    @include mediumScreen {
+      border-right: none;
+      margin-bottom: 30px;
+    }
+  }
+
+  > div:last-of-type {
+    border-left: 10px solid $primary-colour;
+
+    @include mediumScreen {
+      border: none;
+    }
+  }
+
+  > div {
+    background-color: $dark-accent-color;
+    width: 100%;
+    padding: 20px;
+
+    @include mediumScreen {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    dt,
+    h3 {
+      text-decoration: underline;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}

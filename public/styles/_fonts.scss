@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+
+$default-font-size: 18px;
+$small-font-size: 13px;
+$medium-font-size: 22px;
+$large-font-size: 50px;
+
+@mixin primary-font {
+  font-family: "orator-std", monospace;
+  font-display: swap;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-weight: 400;
+  text-align: center;
+}
+
+$italic-font: "Droid Serif", serif;

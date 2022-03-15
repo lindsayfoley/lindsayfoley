@@ -1,0 +1,98 @@
+@import "./index.scss";
+
+body {
+  @include primary-font;
+  background-color: $primary-colour;
+  margin: 0;
+  min-width: 320px;
+}
+
+main {
+  max-width: 900px;
+  margin: 60px auto 0 auto;
+
+  @include mediumScreen {
+    padding: 0 10px;
+  }
+
+  @include smallScreen {
+    margin-top: 40px;
+  }
+}
+
+p,
+p a,
+ul li,
+dt,
+dl,
+i {
+  font-size: $default-font-size;
+}
+
+p,
+a,
+ul li,
+dt,
+dl,
+i {
+  color: $light-color;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+  color: $light-color;
+}
+
+h1 {
+  @include primary-font;
+  width: 300px;
+  letter-spacing: -7px;
+  font-size: $large-font-size;
+  border-bottom: 4px double $light-color;
+}
+
+h2 {
+  font-family: $italic-font;
+  font-size: $medium-font-size;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 10px;
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+
+  img {
+    border: 0;
+  }
+}
+
+dl {
+  list-style-position: inside;
+}
+
+dt {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+dd {
+  display: list-item;
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 10px;
+}
+
+small {
+  padding: 15px 0;
+  display: block;
+}
+
+hr {
+  color: lighten(#9b9895, 20%);
+}

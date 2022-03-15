@@ -1,0 +1,36 @@
+.coding {
+  background-color: #f06955;
+
+  .inner {
+    background-color: #f78e7e;
+  }
+
+  .screen,
+  .screen::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .screen {
+    width: 70%;
+    height: 60%;
+    background-color: #f3f7f7;
+    box-shadow: 0px 7px 10px #524f4f;
+
+    &::after {
+      width: 90%;
+      height: 90%;
+      padding: 10px 0 0 10px;
+      box-sizing: border-box;
+      content: '<!DOCTYPE html>\A<html>\A<head>\A<meta name="viewport" content="width=device-width"> \A <meta charSet="utf-8" />\A <meta name="keywords" content="freelancer, freelance Web Developer, Frontend Developer">\A<link rel="stylesheet" href="https://use.typekit.net/ohe1rsj">\A <title>About Lindsay Foley, A Web Developer Based In London<title>\A<meta name="description" content="A Front End Web Developer from London">\A</head>\A\A<body>';
+      white-space: pre;
+      background: #000000;
+      color: #1d6764;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      font-size: 7px;
+      text-align: left;
+    }
+  }
+}

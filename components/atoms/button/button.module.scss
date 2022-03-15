@@ -1,0 +1,23 @@
+@import "/public/styles/index.scss";
+
+.button {
+  @include primary-font;
+  width: 250px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
+  background: inherit;
+  color: $light-color;
+  border: $default-border;
+  transition: all 0.3s ease 0s;
+  margin: 0 auto;
+
+  &:hover {
+    background: $light-color;
+    color: $primary-colour;
+  }
+
+  @include smallScreen {
+    margin-top: 20px;
+  }
+}
