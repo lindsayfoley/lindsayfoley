@@ -19,7 +19,7 @@ const AboutMe: VFC = () => (
         If you've been here before the site may look unchanged but I do update
         it every so often utilising new skills that I learn. Currently it's a
         React app written in Typescript, on the Next.js framework and styled
-        using SASS.
+        using SASS modules.
       </p>
       <section className={styles.skills}>
         <div>
@@ -31,8 +31,8 @@ const AboutMe: VFC = () => (
           </p>
           <p>
             In that time, I've been lucky to work for some notable companies
-            including Selfridges, Disney, Charlotte Tilbury, The Times and most
-            recently BT where I joined as a Lead Engineer.
+            including Selfridges, Disney, Charlotte Tilbury, The Times, BT and
+            most recently ClearScore where I joined as a Senior Engineer.
           </p>
           <p>
             I've also worked on many projects from CRO initiatives to improving
@@ -42,10 +42,13 @@ const AboutMe: VFC = () => (
         <div>
           <dl>
             <dt>Web Development Skills</dt>
-            <dd>HTML, CSS, SCSS, Styled JSX, Styled Components, Material UI</dd>
             <dd>
               Typescript, JavaScript, Dust.js, jQuery. A bit of PHP, VB &amp;
               SQL
+            </dd>
+            <dd>
+              HTML, CSS, SCSS, Styled JSX, Styled Components, CSS/SCSS modules
+              and Material UI
             </dd>
             <dd>Node &amp; Express</dd>
             <dd>React and Redux</dd>
