@@ -1,39 +1,21 @@
-@import "_base.scss";
+$largeDevices: 813px;
+$mediumDevices: 812px;
+$smallDevices: 550px;
 
-main {
-  max-width: 900px;
-  margin: 60px auto 0 auto;
-
-  @include mediumScreen {
-    padding: 0 10px;
-  }
-
-  @include smallScreen {
-    margin-top: 40px;
+@mixin largeScreen() {
+  @media (min-width:#{$largeDevices}) {
+    @content;
   }
 }
 
-nav {
-  max-width: 800px;
-  width: 100%;
-  margin: 30px auto 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @include smallScreen {
-    flex-direction: column;
-  }
-
-  .button {
-    @include smallScreen {
-      margin-top: 20px;
-    }
+@mixin mediumScreen() {
+  @media (max-width:#{$mediumDevices}) {
+    @content;
   }
 }
 
-footer {
-  width: 100%;
-  background-color: $dark-color;
-  color: $pale-accent-color;
+@mixin smallScreen() {
+  @media (max-width:#{$smallDevices}) {
+    @content;
+  }
 }

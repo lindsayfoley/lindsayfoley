@@ -1,6 +1,10 @@
-const withStyles = require('@webdeb/next-styles');
+/** @type {import('next').NextConfig} */
 
-module.exports = withStyles({
-  sass: true, 
-  modules: true
-})
+const path = require("path");
+
+module.exports = {
+  reactStrictMode: true,
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+  },
+};

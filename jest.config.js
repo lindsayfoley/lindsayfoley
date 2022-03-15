@@ -1,20 +1,11 @@
 module.exports = {
-  collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
-    '!**/*.d.ts',
-    '!**/node_modules/**',
-  ],
-  setupFilesAfterEnv: ['<rootDir>/__mocks__/setupTests.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest'
-  },
-  transformIgnorePatterns: [
-    '/node_modules/',
-    '^.+\\.module\\.scss$',
-  ],
+  collectCoverageFrom: ["{src,pages}/**/*.{js,jsx,ts,tsx}"],
+  moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node"],
   moduleNameMapper: {
-    '\\.scss$': '<rootDir>/__mocks__/SCSSStub.js',
+    "@src/(.*)": "<rootDir>/src/$1",
+    "\\.css$": "identity-obj-proxy",
   },
-  snapshotSerializers: ["enzyme-to-json/serializer"]
-}
+  modulePathIgnorePatterns: ["<rootDir>/dist/"],
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|jsx|js|ts)?$",
+  testEnvironment: 'jsdom'
+};
