@@ -7,5 +7,6 @@ module.exports = {
   },
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|jsx|js|ts)?$",
-  testEnvironment: 'jsdom'
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/setuptests.ts"],
 };

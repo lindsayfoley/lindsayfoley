@@ -25,7 +25,7 @@ const Anchor: VFC<AnchorProps> = ({
 
   return (
     <a {...props}>
-      {icon && <i className={icon}></i>}
+      {icon && <i className={icon} data-testid="icon"></i>}
       {cta}
     </a>
   );
