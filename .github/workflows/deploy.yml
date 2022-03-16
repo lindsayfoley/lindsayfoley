@@ -11,15 +11,20 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Cache  💾
-        uses: actions/cache@v2
-        with:
-          path: ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
-
       - name: Install and Build 🔧
         uses: actions/setup-node@v1
       - run: npm install
       - run: npm run export
         env:
           CI: true
+
+      - name: Deploy 🚀
+        uses: appleboy/scp-action@master
+        env:
+          HOST: ${{ secrets.SSH_HOST }}
+          USERNAME: ${{ secrets.SSH_USERNAME }}
+          PORT: 22
+          KEY: ${{ secrets.SSH_KEY }}
+        with:
+          source: out
+          target: ${{ secrets.REMOTE_DIR }}
