@@ -16,3 +16,12 @@ jobs:
       - run: npm run export
         env:
           CI: true
+
+      - name: Deploy 🚀
+        with:
+          HOST: ${{ secrets.SSH_HOST }}
+          USERNAME: ${{ secrets.SSH_USERNAME }}
+          PORT: 22
+          KEY: ${{ secrets.SSH_KEY }}
+          FOLDER: out
+          target: "${{ secrets.REMOTE_DIR }}"
