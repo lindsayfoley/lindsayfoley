@@ -1,5 +1,4 @@
 import { VFC } from "react";
-import Link from "next/link";
 import styles from "./button.module.scss";
 
 export interface ButtonProps {
@@ -8,11 +7,9 @@ export interface ButtonProps {
 }
 
 const Button: VFC<ButtonProps> = ({ link, cta }) => (
-  <Link href={link}>
-    <a className={styles.button} itemProp="url">
-      {cta}
-    </a>
-  </Link>
+  <a className={styles.button} href={link} itemProp="url">
+    {cta}
+  </a>
 );
 
 export default Button;
