@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
 
       - name: Install and Build 🔧
         uses: actions/setup-node@v1
@@ -16,12 +17,3 @@ jobs:
       - run: npm run export
         env:
           CI: true
-
-      - name: Deploy 🚀
-        with:
-          HOST: ${{ secrets.SSH_HOST }}
-          USERNAME: ${{ secrets.SSH_USERNAME }}
-          PORT: 22
-          KEY: ${{ secrets.SSH_KEY }}
-          FOLDER: out
-          target: "${{ secrets.REMOTE_DIR }}"
