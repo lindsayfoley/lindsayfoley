@@ -31,8 +31,7 @@ const AboutMe: VFC = () => (
           </p>
           <p>
             In that time, I've been lucky to work for some notable companies
-            including Selfridges, Disney, Charlotte Tilbury, The Times, BT and
-            most recently ClearScore where I joined as a Senior Engineer.
+            including Selfridges, Disney, Charlotte Tilbury, The Times and BT.
           </p>
           <p>
             I've also worked on many projects from CRO initiatives to improving
