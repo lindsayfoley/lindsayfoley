@@ -1,11 +1,12 @@
 name: Build and Deploy
-on: [push]
+
+on:
+  push:
+    branches: [master]
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./src
 
     steps:
       - name: Checkout 🛎️
