@@ -11,9 +11,10 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Install and Build 🔧
+      - name: Install, Test & Build 🔧
         uses: actions/setup-node@v1
       - run: npm install
+      - run: npm test
       - run: npm run export
         env:
           CI: true
