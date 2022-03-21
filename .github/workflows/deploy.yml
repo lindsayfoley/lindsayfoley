@@ -17,6 +17,7 @@ jobs:
       - run: npm run export
         env:
           CI: true
+      - run: cd out
 
       - name: Deploy 🚀
         uses: appleboy/scp-action@master
@@ -26,5 +27,5 @@ jobs:
           PORT: 22
           KEY: ${{ secrets.SSH_KEY }}
         with:
-          source: "out/*"
+          source: "*"
           target: ${{ secrets.REMOTE_DIR }}
