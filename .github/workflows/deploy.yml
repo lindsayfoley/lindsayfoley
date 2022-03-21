@@ -12,4 +12,5 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           port: 22
           key: ${{ secrets.SSH_KEY }}
+          passphrase: ""
           script: whoami
