@@ -32,6 +32,7 @@ const AboutMe: VFC = () => (
           <p>
             In that time, I've been lucky to work for some notable companies
             including Selfridges, Disney, Charlotte Tilbury, The Times and BT.
+            Most recently, I joined ClearScore as a Senior Frontend Dev.
           </p>
           <p>
             I've also worked on many projects from CRO initiatives to improving
