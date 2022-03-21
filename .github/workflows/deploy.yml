@@ -26,5 +26,5 @@ jobs:
           PORT: 22
           KEY: ${{ secrets.SSH_KEY }}
         with:
-          source: out/*
+          source: "out/*"
           target: ${{ secrets.REMOTE_DIR }}
