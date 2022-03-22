@@ -1,10 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import { Layout } from "components/templates";
 import { AboutMe } from "components/organisms";
 
 const AboutPage: React.FunctionComponent = () => (
-  <Layout>
+  <>
     <Head>
       <title>About Lindsay Foley, A Web Developer Based In London</title>
       <meta
@@ -13,7 +12,7 @@ const AboutPage: React.FunctionComponent = () => (
       />
     </Head>
     <AboutMe />
-  </Layout>
+  </>
 );
 
 export default AboutPage;

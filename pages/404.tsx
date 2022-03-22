@@ -1,11 +1,10 @@
 import { VFC } from "react";
 import Head from "next/head";
 import { Nav } from "components/atoms";
-import { Layout } from "components/templates";
 import { Scampi } from "components/molecules/drawings";
 
 const ErrorPage: VFC = () => (
-  <Layout>
+  <>
     <Head>
       <title>Uh-oh that page doesn't exist</title>
     </Head>
@@ -28,7 +27,7 @@ const ErrorPage: VFC = () => (
         ]}
       />
     </main>
-  </Layout>
+  </>
 );
 
 export default ErrorPage;
