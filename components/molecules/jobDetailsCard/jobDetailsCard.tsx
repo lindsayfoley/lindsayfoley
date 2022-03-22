@@ -12,13 +12,13 @@ const JobDetailsCard: VFC<{ company: CompanyDetails }> = ({ company }) => {
     useJobDescriptionToggler(selectedCardCompanyId);
 
   const companyId = company.id;
-  const articleClassnames = `${styles[companyId]} ${cardStyles["flip-card"]} ${styles["flip-card"]}`;
+  const articleClassnames = `${styles[companyId]} ${cardStyles["flip-card"]}`;
 
   return (
     <article
       className={
         hasVisibleDescription(companyId)
-          ? `${styles["show-details"]} ${cardStyles["show-details"]} ${articleClassnames}`
+          ? `${cardStyles["show-details"]} ${articleClassnames}`
           : articleClassnames
       }
       onClick={() => handleCardInteraction(companyId)}
@@ -28,7 +28,7 @@ const JobDetailsCard: VFC<{ company: CompanyDetails }> = ({ company }) => {
       tabIndex={0}
     >
       <div
-        className={`${cardStyles.wrapper} ${styles.wrapper}`}
+        className={cardStyles.wrapper}
         itemScope
         itemType="http://schema.org/CreativeWork"
       >
@@ -37,7 +37,7 @@ const JobDetailsCard: VFC<{ company: CompanyDetails }> = ({ company }) => {
           <span>Details &rsaquo;</span>
         </div>
         <div
-          className={`${styles.description} ${cardStyles.description}`}
+          className={cardStyles.description}
           itemProp="description"
           aria-labelledby={companyId}
         >

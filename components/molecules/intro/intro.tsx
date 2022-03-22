@@ -19,7 +19,7 @@ const Intro: VFC = () => (
     />
     <Nav
       links={[
-        { link: "/portfolio", cta: "View my work" },
+        { link: "/portfolio", cta: "view my work" },
         { link: "/about", cta: "about me" },
       ]}
     />
