@@ -20,32 +20,52 @@ describe("JobDetailsCard", () => {
     render(<JobDetailsCard company={mockCompany} />);
   });
 
-  it("Should render a company title", () => {
-    expect(
-      screen.getByRole("heading", {
-        level: 3,
-        name: mockCompany.companyName,
-      }),
-    ).toBeVisible();
+  describe("When the job description is hidden", () => {
+    it("Should render a company title", () => {
+      expect(
+        screen.getByRole("heading", {
+          level: 3,
+          name: mockCompany.companyName,
+        }),
+      ).toBeVisible();
+    });
+
+    it("Should render a cta to view the description", () => {
+      expect(screen.getByText(/Details/)).toBeVisible();
+    });
+
+    it("Should not render the description section by default", () => {
+      expect(screen.queryByRole("separator")).toBeNull();
+    });
   });
 
-  it("Should render a cta to view the summary", () => {
-    expect(screen.getByText(/Details/)).toBeVisible();
-  });
+  describe("When the job description is visible", () => {
+    it("Should render the description section on click of card", () => {
+      const button = screen.getByRole("button");
+      fireEvent.click(button);
+      expect(button).toHaveClass("show-details");
+      expect(screen.getByText(description)).toBeVisible();
+    });
 
-  it("Should not render the summary by default", () => {
-    expect(screen.getByRole("button")).not.toHaveClass("show-details");
-  });
+    it("Should render a hr with a link to view the company website", () => {
+      fireEvent.click(screen.getByRole("button"));
+      expect(screen.getByRole("separator")).toBeVisible();
+      expect(screen.getByText(cta)).toBeVisible();
+    });
 
-  it("Should render the summary on click of card", () => {
-    const button = screen.getByRole("button");
-    fireEvent.click(button);
-    expect(button).toHaveClass("show-details");
-    expect(screen.getByText(description)).toBeVisible();
-  });
+    it("Should hide the company title", () => {
+      fireEvent.click(screen.getByRole("button"));
+      expect(
+        screen.queryByRole("heading", {
+          level: 3,
+          name: mockCompany.companyName,
+        }),
+      ).toBeNull();
+    });
 
-  it("Should render a hr with a link to view the company website", () => {
-    expect(screen.getByRole("separator")).toBeVisible();
-    expect(screen.getByText(cta)).toBeVisible();
+    it("Should hide the cta to view the description", () => {
+      fireEvent.click(screen.getByRole("button"));
+      expect(screen.queryByText(/Details/)).toBeVisible();
+    });
   });
 });
