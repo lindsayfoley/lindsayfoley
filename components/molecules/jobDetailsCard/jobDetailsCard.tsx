@@ -1,4 +1,4 @@
-import { useState, VFC } from "react";
+import { VFC } from "react";
 import { Anchor } from "components/atoms";
 import { CompanyDetails } from "./types";
 import cardStyles from "./jobDetailsCard.module.scss";
@@ -6,24 +6,24 @@ import { useJobDescriptionToggler } from "hooks";
 import styles from "components/organisms/portfolio/portfolio.module.scss";
 
 const JobDetailsCard: VFC<{ company: CompanyDetails }> = ({ company }) => {
-  const [selectedCardCompanyId] = useState<string>("");
-
   const { hasVisibleDescription, handleCardInteraction, handleOnKeyDown } =
-    useJobDescriptionToggler(selectedCardCompanyId);
+    useJobDescriptionToggler();
 
-  const companyId = company.id;
-  const articleClassnames = `${styles[companyId]} ${cardStyles["flip-card"]}`;
+  const { id, companyName, description, link, cta } = company;
+  const articleClassnames = `${styles[id]} ${cardStyles["flip-card"]}`;
+  const isVisible = hasVisibleDescription(id);
 
   return (
     <article
       className={
-        hasVisibleDescription(companyId)
+        isVisible
           ? `${cardStyles["show-details"]} ${articleClassnames}`
           : articleClassnames
       }
-      onClick={() => handleCardInteraction(companyId)}
-      onKeyDown={handleOnKeyDown}
-      aria-controls={companyId}
+      onClick={() => handleCardInteraction(id)}
+      onKeyDown={(event) => handleOnKeyDown(event, id)}
+      id={id}
+      aria-expanded={isVisible}
       role="button"
       tabIndex={0}
     >
@@ -32,18 +32,23 @@ const JobDetailsCard: VFC<{ company: CompanyDetails }> = ({ company }) => {
         itemScope
         itemType="http://schema.org/CreativeWork"
       >
-        <div className={cardStyles.heading}>
-          <h3 itemProp="name">{company.companyName}</h3>
+        <div
+          className={cardStyles.heading}
+          aria-label={`View the ${companyName} site`}
+          aria-hidden={isVisible}
+        >
+          <h3 itemProp="name">{companyName}</h3>
           <span>Details &rsaquo;</span>
         </div>
         <div
+          aria-hidden={!isVisible}
           className={cardStyles.description}
           itemProp="description"
-          aria-labelledby={companyId}
+          aria-labelledby={id}
         >
-          {company.description}
+          {description}
           <hr />
-          <Anchor link={company.link} cta={company.cta || "Visit Site ›"} />
+          <Anchor link={link} cta={cta || "Visit Site ›"} />
         </div>
       </div>
     </article>
