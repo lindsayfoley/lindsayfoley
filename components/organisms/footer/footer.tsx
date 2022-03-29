@@ -1,32 +1,39 @@
 import { VFC } from "react";
 import { Anchor } from "components/atoms";
+import {
+  EMAIL_ADDRESS,
+  GITHUB_PROFILE,
+  LINKEDIN_PROFILE,
+  TRAVEL_BLOG,
+  TRAVEL_BLOG_INSTAGRAM,
+} from "components/constants";
 import styles from "./footer.module.scss";
 
 const Footer: VFC = () => (
   <footer className={styles.footer}>
     <div className={styles["social-icons"]}>
       <Anchor
-        link="mailto:me@lindsayfoley.co.uk"
+        link={EMAIL_ADDRESS}
         icon="fa fa-paper-plane"
         titleText="Contact me"
       />
       <Anchor
-        link="http://uk.linkedin.com/pub/lindsay-foley/34/935/9a1"
+        link={LINKEDIN_PROFILE}
         icon="fab fa-linkedin-in"
         titleText="View my LinkedIn profile"
       />
       <Anchor
-        link="https://github.com/lindsayfoley"
+        link={GITHUB_PROFILE}
         icon="fab fa-github-alt"
         titleText="Find me on GitHub"
       />
       <Anchor
-        link="http://instagram.com/comeflywithlindsay"
+        link={TRAVEL_BLOG_INSTAGRAM}
         icon="fab fa-instagram"
         titleText="Check out my Instagram"
       />
       <Anchor
-        link="https://comeflywithlindsay.com"
+        link={TRAVEL_BLOG}
         icon="fas fa-rss"
         titleText="Have a look at my blog"
       />
