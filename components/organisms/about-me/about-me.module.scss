@@ -40,6 +40,19 @@
       box-sizing: border-box;
     }
 
+    @include smallScreen {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    dd {
+      list-style-type: none;
+    }
+
     dt,
     h3 {
       text-decoration: underline;

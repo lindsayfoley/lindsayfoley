@@ -32,44 +32,40 @@ const AboutMe: VFC = () => (
           <p>
             In that time, I've been lucky to work for some notable companies
             including Selfridges, Disney, Charlotte Tilbury, The Times and BT.
-            Most recently, I joined ClearScore as a Senior Frontend Dev.
+            Most recently I joined ClearScore as a Senior Frontend Developer.
           </p>
           <p>
-            I've also worked on many projects from CRO initiatives to improving
-            web performance, to building component libraries.
+            I've also worked on many projects, from CRO initiatives to improving
+            web performance and building UI libraries for the wider business to
+            consume.
           </p>
         </div>
         <div>
           <dl>
             <dt>Web Development Skills</dt>
+            <dd>🏆 Received an engineering recognition award at BT in 2021</dd>
+            <dd>⚛️ React, Redux</dd>
+            <dd>🌐 Typescript, JavaScript, PHP, SQL</dd>
             <dd>
-              Typescript, JavaScript, Dust.js, jQuery. A bit of PHP, VB &amp;
-              SQL
+              🛠️ HTML, SCSS, Styled JSX, Styled Components, CSS/SCSS modules
             </dd>
+            <dd>🧪 Jest, React Testing Library, Cypress, Enzyme &amp; Mocha</dd>
+            <dd>💻 Node &amp; Express</dd>
+            <dd>🔌 GraphQL, Apollo Client, REST clients, consuming APIs</dd>
+            <dd>🔧 Git, Webpack, NPM, Babel, Gulp, Storybook</dd>
+            <dd>🧰 Next.js, CRA, Gatsby frameworks</dd>
+            <dd>👩🏽‍💻 Principle Dev experience, suppporting multiple squads</dd>
+            <dd>🌎 A11y best practices</dd>
+            <dd>🏗️ Foundation &amp; Bootstrap</dd>
+            <dd>🔬 A/B &amp; MVT testing</dd>
+            <dd>📧 Building responsive HTML emails</dd>
+            <dd>✏️ CMS; Contentful, Drupal, Wordpress, AEM, Squarespace</dd>
             <dd>
-              HTML, CSS, SCSS, Styled JSX, Styled Components, CSS/SCSS modules
-              and Material UI
+              ‍🎨 Graphic design, UI/UX design principles &amp; usability
+              testing
             </dd>
-            <dd>Node &amp; Express</dd>
-            <dd>React and Redux</dd>
-            <dd>
-              Experience with GraphQL, Apollo Client and consuming REST APIs
-            </dd>
-            <dd>Next.js, CRA, Gatsby frameworks</dd>
-            <dd>A11y best practices</dd>
-            <dd>Jest, Enzyme, Mocha, Cypress, React Testing Library</dd>
-            <dd>Foundation &amp; Bootstrap</dd>
-            <dd>A/B &amp; MVT testing</dd>
-            <dd>Web performance</dd>
-            <dd>Git &amp; SVN</dd>
-            <dd>Building responsive HTML emails</dd>
-            <dd>Tooling; Webpack, NPM, Babel, Gulp, Storybook</dd>
-            <dd>CMS; Contentful, Drupal, Wordpress, Squarespace, AEM</dd>
-            <dd>
-              Graphic design, UI/UX design principles &amp; usability testing
-            </dd>
-            <dd>Qualified Digital Marketer</dd>
-            <dd>SEO best practices</dd>
+            <dd>🎓 Qualified Digital Marketer</dd>
+            <dd>🔍 SEO best practices</dd>
           </dl>
         </div>
       </section>
