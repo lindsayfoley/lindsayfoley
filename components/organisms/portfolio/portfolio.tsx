@@ -14,11 +14,11 @@ const Portfolio: VFC = () => (
     </header>
     <main>
       <section className={styles.companies}>
-        {Companies.map((company: CompanyDetails) => {
-          return company && company.id ? (
+        {Companies.map((company: CompanyDetails) =>
+          company && company.id ? (
             <JobDetailsCard key={company.id} company={company} />
-          ) : null;
-        })}
+          ) : null,
+        )}
       </section>
       <Nav
         links={[

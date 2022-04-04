@@ -43,22 +43,20 @@ const AboutMe: VFC = () => (
         <div>
           <dl>
             <dt>Web Development Skills</dt>
-            <dd>🏆 Received an engineering recognition award at BT in 2021</dd>
+            <dd>🏆 Received an engineering recognition award at BT</dd>
             <dd>⚛️ React, Redux</dd>
-            <dd>🌐 Typescript, JavaScript, PHP, SQL</dd>
-            <dd>
-              🛠️ HTML, SCSS, Styled JSX, Styled Components, CSS/SCSS modules
-            </dd>
+            <dd>🌐 TypeScript, JavaScript, PHP, SQL</dd>
+            <dd>🛠️ HTML, SCSS, Styled JSX, Styled Components, SCSS modules</dd>
             <dd>🧪 Jest, React Testing Library, Cypress, Enzyme &amp; Mocha</dd>
             <dd>💻 Node &amp; Express</dd>
             <dd>🔌 GraphQL, Apollo Client, REST clients, consuming APIs</dd>
             <dd>🔧 Git, Webpack, NPM, Babel, Gulp, Storybook</dd>
-            <dd>🧰 Next.js, CRA, Gatsby frameworks</dd>
+            <dd>🧰 Next.js, CRA, Gatsby</dd>
             <dd>👩🏽‍💻 Principle Dev experience, suppporting multiple squads</dd>
             <dd>🌎 A11y best practices</dd>
             <dd>🏗️ Foundation &amp; Bootstrap</dd>
             <dd>🔬 A/B &amp; MVT testing</dd>
-            <dd>📧 Building responsive HTML emails</dd>
+            <dd>📧 Responsive HTML emails</dd>
             <dd>✏️ CMS; Contentful, Drupal, Wordpress, AEM, Squarespace</dd>
             <dd>
               ‍🎨 Graphic design, UI/UX design principles &amp; usability
