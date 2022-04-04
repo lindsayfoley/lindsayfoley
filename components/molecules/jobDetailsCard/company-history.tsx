@@ -8,7 +8,7 @@ export const Companies: CompanyDetails[] = [
       <>
         <p>
           I led multiple squads working on a variety of new sites for BT &amp;
-          EE
+          EE.
         </p>
         <p>
           <span itemProp="keywords">
@@ -26,9 +26,9 @@ export const Companies: CompanyDetails[] = [
       <>
         <p>
           I helped build a new onboarding journey using{" "}
-          <span itemProp="keywords">TypeScript &amp; React</span>
+          <span itemProp="keywords">TypeScript &amp; React</span>.
         </p>
-        <p>Also improved performance for the online store.</p>
+        <p>I also optimised the performance of the store.</p>
       </>
     ),
     link: "https://www.thetimes.co.uk/",
@@ -41,9 +41,8 @@ export const Companies: CompanyDetails[] = [
         <p>
           I worked on a{" "}
           <span itemProp="keywords">
-            React app written in TypeScript, using Redux &amp; SCSS{" "}
+            React app written in TypeScript, using Redux &amp; SCSS.{" "}
           </span>
-          .
         </p>
         <p>Also used Jest &amp; Enzyme, Storybook, Contentful CMS.</p>
       </>
