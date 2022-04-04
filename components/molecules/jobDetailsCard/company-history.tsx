@@ -2,17 +2,51 @@ import { CompanyDetails } from "./types";
 
 export const Companies: CompanyDetails[] = [
   {
+    id: "bt",
+    companyName: "BT",
+    description: (
+      <>
+        <p>
+          I led multiple squads working on a variety of new sites for BT &amp;
+          EE
+        </p>
+        <p>
+          <span itemProp="keywords">
+            React, TypeScript, NextJs, React Testing Library.
+          </span>
+        </p>
+      </>
+    ),
+    link: "https://www.bt.com/",
+  },
+  {
+    id: "times",
+    companyName: "The Times",
+    description: (
+      <>
+        <p>
+          I helped build a new onboarding journey using{" "}
+          <span itemProp="keywords">TypeScript &amp; React</span>
+        </p>
+        <p>Also improved performance for the online store.</p>
+      </>
+    ),
+    link: "https://www.thetimes.co.uk/",
+  },
+  {
     id: "ct",
     companyName: "Charlotte Tilbury",
     description: (
-      <p>
-        Working on a{" "}
-        <span itemProp="keywords">
-          React app written in TypeScript, using Redux &amp; SCSS. Experience
-          with Jest &amp; Enzyme, Storybook &amp; Contentful CMS
-        </span>
-        .
-      </p>
+      <>
+        <p>
+          I worked on a{" "}
+          <span itemProp="keywords">
+            React app written in TypeScript, using Redux &amp; SCSS{" "}
+          </span>
+          .
+        </p>
+        <p>Also used Jest &amp; Enzyme, Storybook, Contentful CMS.</p>
+      </>
     ),
     link: "https://www.charlottetilbury.com/uk",
   },
@@ -151,29 +185,5 @@ export const Companies: CompanyDetails[] = [
     ),
     cta: "View past work ›",
     link: "http://web.archive.org/web/20140511040437/http://www.whitestuff.com/jobs",
-  },
-  {
-    id: "ppp",
-    companyName: "Paw Print Productions",
-    description: (
-      <p>
-        I co-developed and designed this responsive site many years ago (2011)
-        using <span itemProp="keywords">HTML, CSS &amp; a bit of jQuery</span>.
-      </p>
-    ),
-    link: "https://web.archive.org/web/20160115162243/http://paw-print-productions.co.uk",
-  },
-  {
-    id: "ob",
-    companyName: "Oliver Bonas",
-    description: (
-      <p itemProp="description">
-        I joined the web team way back in{" "}
-        <span itemProp="dateCreated">2008</span> and was responsible for{" "}
-        <span itemProp="keywords">designing web content &amp; HTML emails</span>
-        .
-      </p>
-    ),
-    link: "https://www.oliverbonas.com",
   },
 ];
