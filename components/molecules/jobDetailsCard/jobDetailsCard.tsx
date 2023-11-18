@@ -1,11 +1,10 @@
-import { VFC } from "react";
 import { Anchor } from "components/atoms";
 import { CompanyDetails } from "./types";
 import cardStyles from "./jobDetailsCard.module.scss";
 import { useJobDescriptionToggler } from "hooks";
 import styles from "components/organisms/portfolio/portfolio.module.scss";
 
-const JobDetailsCard: VFC<{ company: CompanyDetails }> = ({ company }) => {
+const JobDetailsCard = ({ company }: { company: CompanyDetails }) => {
   const { hasVisibleDescription, handleCardInteraction, handleOnKeyDown } =
     useJobDescriptionToggler();
 

@@ -1,14 +1,13 @@
-import { VFC } from "react";
 import Head from "next/head";
 import { Portfolio } from "components/organisms";
 
-const PortfolioPage: VFC = () => (
+const PortfolioPage = () => (
   <>
     <Head>
-      <title>View My Web Development Portfolio and Past Projects</title>
+      <title>Lindsay Foley - Web Development Portfolio</title>
       <meta
         name="description"
-        content="Lindsay Foley is a web developer in London, have a look at some completed projects here."
+        content="Discover the diverse web development portfolio of Lindsay Foley, a seasoned web developer based in London. Explore a showcase of completed projects and a demonstration of expertise."
       />
     </Head>
     <Portfolio />

@@ -1,4 +1,3 @@
-import { VFC } from "react";
 import { Anchor } from "components/atoms";
 import {
   EMAIL_ADDRESS,
@@ -9,7 +8,7 @@ import {
 } from "components/constants";
 import styles from "./footer.module.scss";
 
-const Footer: VFC = () => (
+const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles["social-icons"]}>
       <Anchor

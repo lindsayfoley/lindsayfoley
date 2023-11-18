@@ -1,14 +1,14 @@
-import { ReactNode, VFC } from "react";
+import { ReactNode } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import { Footer } from "components/organisms";
 
-const Layout: VFC<{ children: ReactNode }> = ({ children }) => (
+const Layout = ({ children }: { children: ReactNode }) => (
   <>
     <Head>
       <meta
         name="keywords"
-        content="freelancer, freelance Web Developer, Frontend Developer, Frontend Engineer, web development, London, React, Typescript, Javacript, SCSS, web design and development, web site development, web site design, web design development, interactive, london web design, London ecommerce, London web development, website, websites, Lindsay Foley Web Developer"
+        content="freelancer, freelance web developer, frontend developer, frontend engineer, web development, London, React, TypeScript, JavaScript, SCSS, web design, interactive websites, ecommerce, Lindsay Foley"
       />
     </Head>
     <Script

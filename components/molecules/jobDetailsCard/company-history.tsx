@@ -2,17 +2,33 @@ import { CompanyDetails } from "./types";
 
 export const Companies: CompanyDetails[] = [
   {
+    id: "clearscore",
+    companyName: "ClearScore",
+    description: (
+      <>
+        <p>
+          Co-led epics e.g. UI card rewrite, launched A/B tests &amp; products
+          such as car refinancing &amp; PCP.
+        </p>
+        <p>
+          <span itemProp="keywords">React, TypeScript, Node.</span>
+        </p>
+      </>
+    ),
+    link: "https://www.clearscore.com/",
+  },
+  {
     id: "bt",
     companyName: "BT",
     description: (
       <>
         <p>
-          I led multiple squads working on a variety of new sites for BT &amp;
-          EE.
+          Principal Dev supporting squads on a variety of new functionality for
+          BT &amp; EE.
         </p>
         <p>
           <span itemProp="keywords">
-            React, TypeScript, NextJs, React Testing Library.
+            React, TypeScript, NextJs, RTL, MUI, AEM, Node.
           </span>
         </p>
       </>
@@ -25,10 +41,10 @@ export const Companies: CompanyDetails[] = [
     description: (
       <>
         <p>
-          I helped build a new onboarding journey using{" "}
+          Contributed to a new onboarding journey using{" "}
           <span itemProp="keywords">TypeScript &amp; React</span>.
         </p>
-        <p>I also optimised the performance of the store.</p>
+        <p>Optimised the web performance of the store.</p>
       </>
     ),
     link: "https://www.thetimes.co.uk/",
@@ -39,12 +55,9 @@ export const Companies: CompanyDetails[] = [
     description: (
       <>
         <p>
-          I worked on a{" "}
-          <span itemProp="keywords">
-            React app written in TypeScript, using Redux &amp; SCSS.{" "}
-          </span>
+          Co-led Content Design System development &amp; ran various A/B tests.
+          Produced frontend to support virtual services during lockdown.
         </p>
-        <p>Also used Jest &amp; Enzyme, Storybook, Contentful CMS.</p>
       </>
     ),
     link: "https://www.charlottetilbury.com/uk",
@@ -54,12 +67,10 @@ export const Companies: CompanyDetails[] = [
     companyName: "Come Fly With Lindsay",
     description: (
       <>
-        <p>My travel blog which launched in Nov 2016.</p>
+        <p>Launched this little travel blog in 2016.</p>
         <p>
-          Recently updated to React written in{" "}
-          <span itemProp="keywords">
-            TypeScript, using SCSS &amp; styled JSX
-          </span>
+          Recently updated to React using{" "}
+          <span itemProp="keywords">TypeScript, SCSS, and styled JSX</span>.
         </p>
       </>
     ),
@@ -70,12 +81,9 @@ export const Companies: CompanyDetails[] = [
     companyName: "Disney Holidays",
     description: (
       <p>
-        I made this app adaptive/responsive, utilising{" "}
-        <span itemProp="keywords">
-          RESS principles. Writing most of the JavaScript, jQuery, CSS &amp;
-          setting up e2e tests
-        </span>
-        .
+        Co-developed this responsive app, applying{" "}
+        <span itemProp="keywords">RESS principles</span>. Written in JavaScript,
+        jQuery, CSS, with e2e tests for optimal performance.
       </p>
     ),
     link: "http://www.disneyholidays.co.uk",
@@ -85,12 +93,9 @@ export const Companies: CompanyDetails[] = [
     companyName: "Jesus In Action",
     description: (
       <>
+        <p>Revitalised this website for a modern look &amp; feel.</p>
         <p>
-          This website underwent a complete refresh in order to modernise it.
-        </p>
-        <p>
-          It was written in{" "}
-          <span itemProp="keywords">HTML, jQuery and CSS</span>.
+          Developed using <span itemProp="keywords">HTML, jQuery and CSS</span>.
         </p>
       </>
     ),
@@ -101,9 +106,9 @@ export const Companies: CompanyDetails[] = [
     companyName: "The Perfume Mistress",
     description: (
       <p>
-        This one is on Squarespace as my client needed a transactional site, it
-        has bespoke <span itemProp="keywords">CSS &amp; JavaScript</span> to
-        customise the Hayden template.
+        Utilised Squarespace for a transactional site, implementing custom{" "}
+        <span itemProp="keywords">CSS &amp; JavaScript</span> to tailor
+        templates for a unique design.
       </p>
     ),
     link: "https://www.theperfumemistress.com",
@@ -113,12 +118,11 @@ export const Companies: CompanyDetails[] = [
     companyName: "Hayes Dashwood",
     description: (
       <p>
-        I redesigned and coded this website using{" "}
+        Redesigned and coded using{" "}
         <span itemProp="keywords">
-          {" "}
-          HTML, CSS, jQuery &amp; the Google Maps API
-        </span>
-        .
+          HTML, CSS, jQuery and the Google Maps API
+        </span>{" "}
+        for improved functionality and a contemporary UX.
       </p>
     ),
     link: "http://www.hayesdashwood.org.uk",
@@ -128,14 +132,10 @@ export const Companies: CompanyDetails[] = [
     companyName: "Selfridges",
     description: (
       <>
-        <p>I worked on the Selfridges 2014 site redesign.</p>
+        <p>Contributed to the 2014 site redesign.</p>
         <p>
-          I migrated and{" "}
-          <span itemProp="keywords">
-            {" "}
-            developed new responsive content &amp; created HTML emails
-          </span>
-          .
+          Migrated &amp; developed content &amp; HTML emails for enhanced
+          communication.
         </p>
       </>
     ),
@@ -147,12 +147,11 @@ export const Companies: CompanyDetails[] = [
     companyName: "Hopelands Cattery",
     description: (
       <p>
-        I designed and developed this site using{" "}
+        Designed &amp; developed this site with{" "}
         <span itemProp="keywords">
-          {" "}
-          HTML, CSS, jQuery, Slick Slider &amp; the Google Maps API
-        </span>
-        .
+          HTML, CSS, jQuery, Slick Slider and the Google Maps API
+        </span>{" "}
+        for a dynamic and engaging user experience.
       </p>
     ),
     link: "https://web.archive.org/web/20190625163932/http://hopelandscattery.com/",
@@ -162,9 +161,10 @@ export const Companies: CompanyDetails[] = [
     companyName: "Theyer Fitness",
     description: (
       <p>
-        My first piece of freelance work! This site was revamped in{" "}
-        <span itemProp="dateCreated">2011</span>, it was given a new design
-        &amp; developed in <span itemProp="keywords">HTML5 &amp; CSS3</span>.
+        Embarking on my freelance journey, I revamped this site in{" "}
+        <span itemProp="dateCreated">2011</span>. It received a fresh design
+        &amp; was developed in <span itemProp="keywords">HTML5 &amp; CSS3</span>
+        .
       </p>
     ),
     link: "https://web.archive.org/web/20180810084130/http://theyerfitness.co.uk/",
@@ -174,9 +174,9 @@ export const Companies: CompanyDetails[] = [
     companyName: "White Stuff",
     description: (
       <p>
-        My first ever dev role! I created web content and weekly{" "}
+        Started my journey in the world of development by creating web content
+        and weekly{" "}
         <span itemProp="keywords">
-          {" "}
           HTML emails using XHTML4, CSS &amp; jQuery
         </span>
         .
@@ -184,5 +184,29 @@ export const Companies: CompanyDetails[] = [
     ),
     cta: "View past work ›",
     link: "http://web.archive.org/web/20140511040437/http://www.whitestuff.com/jobs",
+  },
+  {
+    id: "ppp",
+    companyName: "Paw Print Productions",
+    description: (
+      <p>
+        Several years back (2011), I collaborated in the development &amp;
+        design of this responsive site, incorporating{" "}
+        <span itemProp="keywords">HTML, CSS, and a touch of jQuery</span>.
+      </p>
+    ),
+    link: "https://web.archive.org/web/20160115162243/http://paw-print-productions.co.uk",
+  },
+  {
+    id: "ob",
+    companyName: "Oliver Bonas",
+    description: (
+      <p itemProp="description">
+        Joined the web team in <span itemProp="dateCreated">2008</span>,
+        Supporting with design of web content and HTML emails with a focus on
+        creativity &amp; engagement.
+      </p>
+    ),
+    link: "https://www.oliverbonas.com",
   },
 ];

@@ -1,11 +1,10 @@
-import { VFC } from "react";
 import { Nav } from "components/atoms";
 import { JobDetailsCard } from "components/molecules";
 import { Companies } from "components/molecules/jobDetailsCard/company-history";
 import { CompanyDetails } from "components/molecules/jobDetailsCard/types";
 import styles from "./portfolio.module.scss";
 
-const Portfolio: VFC = () => (
+const Portfolio = () => (
   <>
     <header>
       <h1 itemProp="name">

@@ -1,8 +1,8 @@
-import { VFC } from "react";
+import { FC } from "react";
 import { Nav } from "components/atoms";
 import styles from "./intro.module.scss";
 
-const Intro: VFC = () => (
+const Intro: FC = () => (
   <section className={styles.intro}>
     <header>
       <h1 itemProp="name">

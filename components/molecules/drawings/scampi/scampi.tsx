@@ -1,7 +1,6 @@
-import { VFC } from "react";
 import styles from "./scampi.module.scss";
 
-const Scampi: VFC = () => (
+const Scampi = () => (
   <div className={`tile ${styles.scampi}`} aria-hidden="true">
     <div className={`inner ${styles.inner}`}>
       <div className={styles.head}>

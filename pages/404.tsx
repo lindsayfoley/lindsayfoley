@@ -1,24 +1,24 @@
-import { VFC } from "react";
 import Head from "next/head";
 import { Nav } from "components/atoms";
 import { Scampi } from "components/molecules/drawings";
 
-const ErrorPage: VFC = () => (
+const ErrorPage = () => (
   <>
     <Head>
-      <title>Uh-oh that page doesn't exist</title>
+      <title>Oops! It seems like you've wandered off the path</title>
     </Head>
     <header>
       <h1 itemProp="name">
-        <a href="/">Soz Try Again</a>
+        <a href="/">Sorry Try Again</a>
       </h1>
     </header>
     <main>
-      <p>Oh no, that page you requested doesn't exist.</p>
+      <p>Oops! It looks like the page you were looking for doesn't exist.</p>
       <p>
-        On the plus side, here's a nice illustration of my cat Scampi that I've
-        been trying to incorporate into this site.
+        On the bright side, here's a charming illustration of my cat, Scampi,
+        that I've been eager to share with you on this site.
       </p>
+
       <Scampi />
       <Nav
         links={[

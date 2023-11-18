@@ -1,13 +1,12 @@
-import { VFC } from "react";
 import { AnchorProps } from "./types";
 
-const Anchor: VFC<AnchorProps> = ({
+const Anchor = ({
   link,
   icon,
   cta,
   titleText = "",
   external = true,
-}) => {
+}: AnchorProps) => {
   const anchorProps = {
     href: link,
     title: titleText,
