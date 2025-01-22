@@ -26,7 +26,7 @@ describe("AboutMe", () => {
   });
 
   it("Should render a description", () => {
-    expect(screen.getByText(/thank you for stopping by/)).toBeVisible();
+    expect(screen.getByText(/Welcome/)).toBeVisible();
   });
 
   it("Should render the main content along with a list of skills", () => {
@@ -38,6 +38,6 @@ describe("AboutMe", () => {
   it("Should render the required nav links", () => {
     expect(screen.getByRole("navigation")).toBeVisible();
     expect(screen.getByRole("link", { name: "View my work" })).toBeVisible();
-    expect(screen.getByRole("link", { name: "back to home" })).toBeVisible();
+    expect(screen.getByRole("link", { name: "Back to home" })).toBeVisible();
   });
 });

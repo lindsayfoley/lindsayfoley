@@ -63,9 +63,11 @@ describe("JobDetailsCard", () => {
       ).toBeNull();
     });
 
-    it("Should hide the cta to view the description", () => {
+    it("Should render the job description and company link on card button click", () => {
+      expect(screen.getByRole("button")).toBeTruthy();
+      expect(screen.queryByRole("link", { name: "visit site" })).toBeNull();
       fireEvent.click(screen.getByRole("button"));
-      expect(screen.queryByText(/Details/)).toBeVisible();
+      expect(screen.getByRole("link", { name: "visit site" })).toBeVisible();
     });
   });
 });
