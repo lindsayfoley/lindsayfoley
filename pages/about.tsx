@@ -5,10 +5,10 @@ import { AboutMe } from "components/organisms";
 const AboutPage: FC = () => (
   <>
     <Head>
-      <title>About Lindsay Foley - Web Developer in London</title>
+      <title>About Lindsay Foley - Freelance Front-End Developer</title>
       <meta
         name="description"
-        content="Experienced Front End Web Developer from London. Discover my expertise in HTML, CSS, JavaScript, UX and Web Optimisation."
+        content="Freelance front-end developer in London, specialising in HTML, CSS, JavaScript, UX, and web optimisation. Learn more about my expertise and experience"
       />
     </Head>
     <AboutMe />

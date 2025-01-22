@@ -4,10 +4,10 @@ import { Portfolio } from "components/organisms";
 const PortfolioPage = () => (
   <>
     <Head>
-      <title>Lindsay Foley - Web Development Portfolio</title>
+      <title>Lindsay Foley - Freelance Web Development Portfolio</title>
       <meta
         name="description"
-        content="Discover the diverse web development portfolio of Lindsay Foley, a seasoned web developer based in London. Explore a showcase of completed projects and a demonstration of expertise."
+        content="Explore the portfolio of Lindsay Foley, a freelance web developer in London. Discover projects that showcase expertise in React, JavaScript, web design and more"
       />
     </Head>
     <Portfolio />
