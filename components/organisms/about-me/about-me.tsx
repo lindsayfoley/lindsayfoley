@@ -24,17 +24,17 @@ const AboutMe: FC = () => (
           <p>
             I bring over a decade of development experience in retail, travel,
             and publishing, having the privilege to contribute to companies like
-            Selfridges, Disney, Charlotte Tilbury, The Times, and BT.
+            Selfridges, Disney, Charlotte Tilbury, The Times and BT.
           </p>
           <p>
-            My journey involves diving into projects from CRO initiatives to
-            ramping up web performance and building UI libraries.
+            My career spans a wide range of projects, from CRO initiatives to
+            optimising web performance and building scalable UI libraries.
           </p>
           <p>
-            Most recently, I've embarked on a new journey, reentering the world
-            of contracting and founding my own company. It's a pleasure to
-            reunite with my dedicated team at Charlotte Tilbury, where I'm
-            actively involved in enhancing SEO efforts.
+            I now run my own company, working with smaller brands to support
+            their unique development needs. My focus is on providing long-term
+            value through thoughtful, hands-on solutions tailored to each
+            business.
           </p>
         </div>
         <div>
@@ -62,7 +62,6 @@ const AboutMe: FC = () => (
             </dd>
             <dd>🎓 Qualified Digital Marketer</dd>
             <dd>🔍 SEO best practices</dd>
-            <dd>🚀 Eager for innovative projects</dd>
           </dl>
         </div>
       </section>

@@ -31,14 +31,16 @@ const JobDetailsCard = ({ company }: { company: CompanyDetails }) => {
         itemScope
         itemType="http://schema.org/CreativeWork"
       >
-        <div
-          className={cardStyles.heading}
-          aria-label={`View the ${companyName} site`}
-          aria-hidden={isVisible}
-        >
-          <h3 itemProp="name">{companyName}</h3>
-          <span>Details &rsaquo;</span>
-        </div>
+        {!isVisible && (
+          <div
+            className={cardStyles.heading}
+            aria-label={`View the ${companyName} site`}
+            aria-hidden={isVisible}
+          >
+            <h3 itemProp="name">{companyName}</h3>
+            <span>Details &rsaquo;</span>
+          </div>
+        )}
         <div
           aria-hidden={!isVisible}
           className={cardStyles.description}
