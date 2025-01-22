@@ -6,7 +6,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "The Mews",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I’ve been supporting The Mews Fabrics & Furnishings by fixing metadata
           issues, resolving bugs in the newsletter signup process, and refining
           discount flows to improve UX.
@@ -20,7 +20,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "The Fabled Thread",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I enhanced this custom Shopify storefront by streamlining workflows,
           fixing bugs, and improving SEO and dependencies to optimise
           performance.
@@ -37,7 +37,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Charlotte Tilbury",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I rejoined as a contractor to develop a new design system and
           implement SEO enhancements, boosting content visibility, engagement
           &amp; scalability.
@@ -54,7 +54,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "ClearScore",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I co-led epics such as a sitewide UI card rewrite, launched A/B tests,
           and delivered key products like car refinancing and PCP offerings.
         </p>
@@ -70,7 +70,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "BT",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           As the Principal Developer, I supported squads in delivering new
           functionality and features for both BT and EE.
         </p>
@@ -88,7 +88,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "The Times",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I worked in the Acquisitions squad writing UI components, implementing
           A/B tests, optimising performance and mentoring junior devs.
         </p>
@@ -104,7 +104,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Charlotte Tilbury",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I co-led Content Design System development &amp; ran various A/B
           tests. Produced frontend to support virtual services during lockdown.
         </p>
@@ -120,7 +120,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Come Fly With Lindsay",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I launched a personal travel blog in 2016 as a platform to refine my
           dev skills and explore modern web technologies.
         </p>
@@ -136,7 +136,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Disney Holidays",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I co-developed responsive sites for Disney, applying RESS principles
           to optimise performance and user experience.
         </p>
@@ -152,7 +152,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Jesus In Action",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I revitalised this charity’s site by modernising its design and
           functionality, creating a more engaging and user-friendly experience.
         </p>
@@ -168,7 +168,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "The Perfume Mistress",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I used Squarespace for this transactional site, adding custom CSS and
           JavaScript to personalise templates and deliver a unique, tailored
           design.
@@ -185,7 +185,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Hayes Dashwood",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I redesigned and developed this charity site to enhance functionality
           and deliver a contemporary UX.
         </p>
@@ -201,7 +201,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Selfridges",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I contributed to the 2014 site redesign by migrating content to
           Drupal, developing responsive pages and enhancing email marketing
           campaigns.
@@ -219,7 +219,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Hopelands Cattery",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I designed and developed this site to deliver a dynamic and engaging
           user experience.
         </p>
@@ -237,7 +237,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Theyer Fitness",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           Embarking on my freelance journey, I revamped this site in{" "}
           <span itemProp="dateCreated">2011</span>, giving it a fresh design and
           updated codebase.
@@ -252,7 +252,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "White Stuff",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I began my journey in web development here, creating web content and
           designing weekly HTML emails to foster engaging user communication.
         </p>
@@ -269,7 +269,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Paw Print Productions",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           In 2011, I collaborated on the development and design of this
           responsive site, creating an engaging and user-friendly experience.
         </p>
@@ -285,7 +285,7 @@ export const Companies: CompanyDetails[] = [
     companyName: "Oliver Bonas",
     description: (
       <>
-        <p>
+        <p itemProp="description">
           I joined the web team in <span itemProp="dateCreated">2008</span>,
           supporting the design of web content and HTML emails with a focus on
           creativity and engagement.

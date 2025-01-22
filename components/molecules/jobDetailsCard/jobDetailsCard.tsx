@@ -44,7 +44,6 @@ const JobDetailsCard = ({ company }: { company: CompanyDetails }) => {
         <div
           aria-hidden={!isVisible}
           className={cardStyles.description}
-          itemProp="description"
           aria-labelledby={id}
         >
           {description}
