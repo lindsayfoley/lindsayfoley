@@ -22,7 +22,7 @@ const AboutMe: FC = () => (
           <h3>My Journey</h3>
           <Coding />
           <p>
-            I bring over a decade of development experience in retail, travel,
+            I bring over a decade of development experience in retail, travel
             and publishing, having the privilege to contribute to companies like
             Selfridges, Disney, Charlotte Tilbury, The Times and BT.
           </p>
@@ -31,10 +31,10 @@ const AboutMe: FC = () => (
             optimising web performance and building scalable UI libraries.
           </p>
           <p>
-            I now run my own company, working with smaller brands to support
-            their unique development needs. My focus is on providing long-term
-            value through thoughtful, hands-on solutions tailored to each
-            business.
+            Currently, I’m self-contracting through my company{" "}
+            <em>Portfoleyo</em>, working with smaller brands to support their
+            development needs and deliver long-term value through tailored,
+            hands-on solutions.
           </p>
         </div>
         <div>
