@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import { Footer } from "components/organisms";
-import { Logo } from "components/svgs/logo";
+import { Logo } from "components/assets/svgs/logo";
 import styles from "./layout.module.scss";
 
 const Layout = ({ children }: { children: ReactNode }) => (
