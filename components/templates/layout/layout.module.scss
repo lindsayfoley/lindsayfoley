@@ -1,0 +1,11 @@
+@import "/public/styles/index.scss";
+
+.logo {
+  @include smallScreen {
+    margin-top: 20px;
+    max-width: 80px;
+  }
+
+  margin-top: 50px;
+  max-width: 100px;
+}

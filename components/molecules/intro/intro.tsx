@@ -5,9 +5,7 @@ import styles from "./intro.module.scss";
 const Intro: FC = () => (
   <section className={styles.intro}>
     <header>
-      <h1 itemProp="name">
-        <a href="/">Lindsay Foley</a>
-      </h1>
+      <h1 itemProp="name">Lindsay Foley</h1>
     </header>
     <h2 itemProp="description">
       <span itemProp="jobTitle">Web Developer</span> based in{" "}

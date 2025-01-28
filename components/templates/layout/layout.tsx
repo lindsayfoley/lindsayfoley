@@ -2,6 +2,8 @@ import { ReactNode } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import { Footer } from "components/organisms";
+import { Logo } from "components/svgs/logo";
+import styles from "./layout.module.scss";
 
 const Layout = ({ children }: { children: ReactNode }) => (
   <>
@@ -23,6 +25,9 @@ const Layout = ({ children }: { children: ReactNode }) => (
               gtag('config', 'G-69DWCVH1KC');`,
       }}
     />
+    <a href="/">
+      <Logo className={styles.logo} />
+    </a>
     {children}
     <Footer />
   </>
