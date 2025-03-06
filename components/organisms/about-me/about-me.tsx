@@ -32,9 +32,11 @@ const AboutMe: FC = () => (
           </p>
           <p>
             Currently, I’m self-contracting through my company{" "}
-            <em>Portfoleyo</em>, working with smaller brands to support their
-            development needs and deliver long-term value through tailored,
-            hands-on solutions.
+            <a href="http://theportfoleyo.com/" target="_blank">
+              The Portfoleyo
+            </a>{" "}
+            working with smaller brands to support their development needs and
+            deliver long-term value through tailored, hands-on solutions.
           </p>
         </div>
         <div>
