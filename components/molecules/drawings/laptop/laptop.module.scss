@@ -1,0 +1,30 @@
+.laptop {
+    position: absolute;
+    top: 160px;
+    left: -80px;
+    width: 165px;
+    height: 120px;
+    border-radius: 12px;
+    background-color: #FCBE51;
+  
+    .inner {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 140px;
+      height: 86px;
+      background-color: #FFFFFF;
+      z-index: 1;
+    }
+    
+    .stand {
+      position: absolute;
+      top: 35px;
+      left: 60px;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 100px solid #FCBE51;
+    }
+  }
