@@ -2,18 +2,18 @@ import { CompanyDetails } from "./types";
 
 export const Companies: CompanyDetails[] = [
   {
-    id: "mews",
-    companyName: "The Mews",
+    id: "portfoleyo",
+    companyName: "The Portfoleyo",
     description: (
       <>
         <p itemProp="description">
-          I’ve been supporting The Mews Fabrics & Furnishings by fixing metadata
-          issues, resolving bugs in the newsletter signup process, and refining
-          discount flows to improve UX.
+          I’ve built and launched The Portfoleyo, my own business and portfolio
+          site, where I offer flexible and affordable development support to
+          independent brands.
         </p>
       </>
     ),
-    link: "https://themewsfurnishings.com",
+    link: "http://theportfoleyo.com/",
   },
   {
     id: "fabled",
