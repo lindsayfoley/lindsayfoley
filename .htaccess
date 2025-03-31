@@ -1,5 +1,8 @@
 RewriteEngine On
 
+DirectoryIndex index.html
+Options -Indexes
+
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*)$ https://lindsayfoley.co.uk/$1 [L,R=301]
